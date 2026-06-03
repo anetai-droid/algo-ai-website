@@ -20,10 +20,10 @@
 
     <main id="main">
       <!-- ページヘッダー -->
-      <section class="bg-blue-pale py-14 lg:py-20">
-        <div class="container-base">
+      <section class="page-hero">
+        <div class="container-base relative z-10">
           <p class="section-eyebrow">Services</p>
-          <h1 class="section-title text-3xl sm:text-4xl">サービス一覧</h1>
+          <h1 class="section-title text-3xl sm:text-4xl lg:text-5xl">サービス一覧</h1>
           <p class="section-lead max-w-2xl">AI導入の相談から開発、福祉支援、データ分析まで。自社の課題に合わせて選べる4つの支援メニューをご用意しています。</p>
         </div>
       </section>
@@ -41,7 +41,7 @@
       <!-- 5.1 AI導入コンサルティング -->
       <section id="consulting" class="py-14 lg:py-20">
         <div class="container-base">
-          <span class="font-mono text-sm font-bold text-accent">01</span>
+          <span class="inline-flex items-center rounded-lg bg-accent-soft px-3 py-1 font-mono text-sm font-bold text-accent-deep">01</span>
           <h2 class="section-title mt-1">AI導入コンサルティング</h2>
           <p class="section-lead max-w-3xl">「AIで何ができるかわからない」段階から伴走し、業務に合うAI活用を設計します。</p>
           <div class="mt-8 grid gap-6 lg:grid-cols-2">
@@ -91,7 +91,7 @@
       <!-- 5.2 AIアプリ・業務システム開発 -->
       <section id="development" class="bg-offwhite py-14 lg:py-20">
         <div class="container-base">
-          <span class="font-mono text-sm font-bold text-accent">02</span>
+          <span class="inline-flex items-center rounded-lg bg-accent-soft px-3 py-1 font-mono text-sm font-bold text-accent-deep">02</span>
           <h2 class="section-title mt-1">AIアプリ・業務システム開発</h2>
           <p class="section-lead max-w-3xl">独自のAIツールや業務支援アプリを開発し、属人的な業務を自動化します。</p>
           <div class="mt-8 grid gap-6 lg:grid-cols-2">
@@ -132,7 +132,7 @@
       <!-- 5.3 福祉・就労支援（詳細は専用ページへ） -->
       <section id="welfare" class="py-14 lg:py-20">
         <div class="container-base">
-          <span class="font-mono text-sm font-bold text-accent">03</span>
+          <span class="inline-flex items-center rounded-lg bg-accent-soft px-3 py-1 font-mono text-sm font-bold text-accent-deep">03</span>
           <h2 class="section-title mt-1">福祉・就労支援向けAI活用支援</h2>
           <p class="section-lead max-w-3xl">就労継続支援A型・B型、福祉法人、NPO向けに、支援員の負担軽減と利用者の作業機会拡大を両立するAI活用を支援します。</p>
           <div class="mt-8 grid gap-6 lg:grid-cols-2">
@@ -162,7 +162,7 @@
       <!-- 5.4 数学・統計コンサルティング -->
       <section id="statistics" class="bg-offwhite py-14 lg:py-20">
         <div class="container-base">
-          <span class="font-mono text-sm font-bold text-accent">04</span>
+          <span class="inline-flex items-center rounded-lg bg-accent-soft px-3 py-1 font-mono text-sm font-bold text-accent-deep">04</span>
           <h2 class="section-title mt-1">数学・統計コンサルティング</h2>
           <p class="section-lead max-w-3xl">統計解析や数理モデルを用いて、データに基づく意思決定と研究・開発を支援します。</p>
           <div class="mt-8 grid gap-6 lg:grid-cols-2">
@@ -195,18 +195,9 @@
       </section>
 
       <!-- CTA -->
-      <section class="bg-navy-dark py-14 text-center text-white lg:py-16">
-        <div class="container-base">
+      <section class="section-dark py-14 text-center lg:py-16">
+        <div class="container-base relative z-10">
           <h2 class="text-2xl font-bold text-white">どのサービスが合うか分からなくても大丈夫です</h2>
-          <p class="mt-3 text-blue-light/90">現状をうかがって、最適な進め方をご提案します。初回相談は無料です。</p>
+          <p class="mt-3 text-white/70">現状をうかがって、最適な進め方をご提案します。初回相談は無料です。</p>
           <div class="mt-6 flex flex-wrap justify-center gap-3">
-            <a href="/contact.html" class="btn-accent" data-cta="services_contact">無料相談する</a>
-            <a href="/flow.html" class="btn-outline border-white text-white hover:bg-white/10" data-cta="services_flow">ご利用の流れを見る</a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    {{> footer }}
-  </body>
-</html>
+            <a href="/contact.html" class="btn-accent" data-cta="services_contact">無

@@ -1,16 +1,19 @@
 <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-navy focus:px-4 focus:py-2 focus:text-white">本文へスキップ</a>
 
-<header class="sticky top-0 z-40 border-b border-blue-light/30 bg-white/95 backdrop-blur">
+<header class="site-header">
   <div class="container-base flex h-16 items-center justify-between lg:h-20">
     <!-- ロゴ -->
-    <a href="/" class="flex items-center gap-2" aria-label="Algo AI ホーム">
-      <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-navy text-white" aria-hidden="true">
+    <a href="/" class="flex items-center gap-3" aria-label="Algo AI ホーム">
+      <span class="brand-mark" aria-hidden="true">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M12 3 3 8v8l9 5 9-5V8z" />
           <path d="M12 12 3 8m9 4 9-4m-9 4v9" />
         </svg>
       </span>
-      <span class="text-xl font-bold tracking-tight text-navy-dark">Algo<span class="text-accent"> AI</span></span>
+      <span class="leading-tight">
+        <span class="block text-xl font-bold tracking-tight text-navy-dark">Algo<span class="text-accent"> AI</span></span>
+        <span class="hidden text-[11px] font-semibold tracking-[0.18em] text-ink-soft sm:block">AI IMPLEMENTATION PARTNER</span>
+      </span>
     </a>
 
     <!-- PCナビ -->
@@ -21,7 +24,7 @@
       <a href="/flow.html" class="nav-link" data-nav-path="/flow.html">ご利用の流れ</a>
       <a href="/pricing-faq.html" class="nav-link" data-nav-path="/pricing-faq.html">料金・FAQ</a>
       <a href="/company.html" class="nav-link" data-nav-path="/company.html">会社概要</a>
-      <a href="/contact.html" class="btn-primary ml-2 px-5 py-2.5 text-sm" data-cta="header_contact">無料相談する</a>
+      <a href="/contact.html" class="btn-primary ml-2 min-h-0 px-5 py-2.5 text-sm" data-cta="header_contact">無料相談</a>
     </nav>
 
     <!-- SPメニューボタン -->
@@ -53,5 +56,4 @@
       <a href="/contact.html" class="btn-primary mt-2 w-full" data-cta="mobile_contact">無料相談する</a>
       <a href="{{ lineUrl }}" class="btn-line mt-1 w-full" data-line target="_blank" rel="noopener">LINEで相談する</a>
     </nav>
-  </div>
-</header>
+  </div>

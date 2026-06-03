@@ -2,21 +2,14 @@ import '../css/style.css'
 
 /* =========================================================
  * Algo AI — フロントエンドの最小限のインタラクション
- *  - スマートフォンメニュー
- *  - FAQアコーディオン（<details>の開閉をGA計測）
- *  - 固定CTAの表示制御
- *  - フォーム補助（送信中の二重送信防止）
- *  - GA4イベント計測
  * =======================================================*/
 
-/** GA4へイベントを送る（gtagが無い環境では黙ってスキップ） */
 function track(eventName, params = {}) {
   if (typeof window.gtag === 'function') {
     window.gtag('event', eventName, params)
   }
 }
 
-/* ---------- スマートフォンメニュー ---------- */
 function initMobileMenu() {
   const toggle = document.querySelector('[data-menu-toggle]')
   const menu = document.querySelector('[data-mobile-menu]')
@@ -33,18 +26,15 @@ function initMobileMenu() {
     setOpen(open)
   })
 
-  // メニュー内リンクのクリックで閉じる
   menu.querySelectorAll('a').forEach((a) =>
     a.addEventListener('click', () => setOpen(false))
   )
 
-  // Escキーで閉じる
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') setOpen(false)
   })
 }
 
-/* ---------- FAQアコーディオン（GA計測） ---------- */
 function initFaq() {
   document.querySelectorAll('details.faq').forEach((el) => {
     el.addEventListener('toggle', () => {
@@ -56,12 +46,10 @@ function initFaq() {
   })
 }
 
-/* ---------- 固定CTAの表示制御 ---------- */
 function initFloatingCta() {
   const cta = document.querySelector('[data-floating-cta]')
   if (!cta) return
   const onScroll = () => {
-    // 400px以上スクロールしたら表示
     cta.classList.toggle('translate-y-40', window.scrollY < 400)
     cta.classList.toggle('opacity-0', window.scrollY < 400)
   }
@@ -69,7 +57,6 @@ function initFloatingCta() {
   window.addEventListener('scroll', onScroll, { passive: true })
 }
 
-/* ---------- 各種CTA/リンクのGA計測 ---------- */
 function initTracking() {
   document.querySelectorAll('[data-cta]').forEach((el) =>
     el.addEventListener('click', () =>
@@ -86,13 +73,11 @@ function initTracking() {
   )
 }
 
-/* ---------- フォーム補助 ---------- */
 function initContactForm() {
   const form = document.querySelector('[data-contact-form]')
   if (!form) return
 
   form.addEventListener('submit', (e) => {
-    // ネイティブのバリデーションに任せ、通過したら送信イベントを送る
     if (!form.checkValidity()) return
     track('contact_submit')
     const btn = form.querySelector('button[type="submit"]')
@@ -101,12 +86,44 @@ function initContactForm() {
       btn.dataset.original = btn.textContent
       btn.textContent = '送信中…'
     }
-    // フォーム自体は通常のPOST/外部サービス送信に任せる
     void e
   })
 }
 
-/* ---------- 現在地ナビのハイライト ---------- */
+function initReveal() {
+  const els = document.querySelectorAll('[data-reveal]')
+  if (!els.length) return
+
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  if (reduce || !('IntersectionObserver' in window)) {
+    els.forEach((el) => el.classList.add('is-visible'))
+    return
+  }
+
+  const io = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible')
+          io.unobserve(entry.target)
+        }
+      })
+    },
+    { threshold: 0.12, rootMargin: '0px 0px -8% 0px' }
+  )
+  els.forEach((el) => io.observe(el))
+}
+
+function initHeaderScroll() {
+  const header = document.querySelector('.site-header')
+  if (!header) return
+  const onScroll = () => {
+    header.setAttribute('data-scrolled', String(window.scrollY > 8))
+  }
+  onScroll()
+  window.addEventListener('scroll', onScroll, { passive: true })
+}
+
 function initActiveNav() {
   const path = location.pathname.replace(/index\.html$/, '').replace(/\/$/, '') || '/'
   document.querySelectorAll('[data-nav-path]').forEach((el) => {
@@ -125,4 +142,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initTracking()
   initContactForm()
   initActiveNav()
+  initReveal()
+  initHeaderScroll()
 })
