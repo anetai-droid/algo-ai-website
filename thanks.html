@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    {{> head-meta }}
+  </head>
+  <body>
+    {{> header }}
+
+    <main id="main">
+      <section class="py-20 lg:py-28">
+        <div class="container-base mx-auto max-w-2xl text-center">
+          <span class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-accent-soft text-accent" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7" /></svg>
+          </span>
+          <h1 class="mt-6 text-2xl font-bold text-navy-dark sm:text-3xl">お問い合わせありがとうございます</h1>
+          <p class="mt-4 text-ink">送信が完了しました。担当者より、通常2〜3営業日以内にご連絡いたします。<br />お急ぎの場合はLINEからもお気軽にご連絡ください。</p>
+          <p class="mt-2 text-sm text-ink/70">自動返信メールが届かない場合は、メールアドレスの入力誤りや迷惑メールフォルダをご確認ください。</p>
+          <div class="mt-8 flex flex-wrap justify-center gap-3">
+            <a href="/" class="btn-primary" data-cta="thanks_home">トップへ戻る</a>
+            <a href="{{ lineUrl }}" class="btn-line" data-line target="_blank" rel="noopener">LINEで相談する</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    {{> footer }}
+  </body>
+</html>

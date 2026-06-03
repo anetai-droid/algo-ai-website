@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Algo AI">
+  <rect width="64" height="64" rx="14" fill="#1b3f6e"/>
+  <g fill="none" stroke="#ffffff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M32 12 14 22v20l18 10 18-10V22z"/>
+    <path d="M32 32 14 22m18 10 18-10m-18 10v20"/>
+  </g>
+  <circle cx="32" cy="32" r="3.2" fill="#2bb6a3"/>
+</svg>

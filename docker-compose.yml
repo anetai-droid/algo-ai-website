@@ -1,0 +1,40 @@
+# 使い方:
+#   開発:        docker compose up dev      -> http://localhost:5173
+#   本番ビルド:  docker compose run --rm build   -> dist/ に出力
+#   ビルド確認:  docker compose up preview  -> http://localhost:4173
+services:
+  # ホットリロード付きの開発サーバー
+  dev:
+    build: .
+    command: npm run dev
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    env_file:
+      - .env
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+
+  # dist/ を生成するワンショットのビルド
+  build:
+    build: .
+    command: npm run build
+    volumes:
+      - .:/app
+      - /app/node_modules
+    env_file:
+      - .env
+
+  # ビルド済み dist/ を確認するプレビューサーバー
+  preview:
+    build: .
+    command: npm run preview
+    ports:
+      - "4173:4173"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    env_file:
+      - .env

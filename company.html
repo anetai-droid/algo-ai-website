@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    {{> head-meta }}
+  </head>
+  <body>
+    {{> header }}
+
+    <main id="main">
+      <section class="bg-blue-pale py-14 lg:py-20">
+        <div class="container-base">
+          <p class="section-eyebrow">Company</p>
+          <h1 class="section-title text-3xl sm:text-4xl">会社概要</h1>
+        </div>
+      </section>
+
+      <!-- 企業メッセージ -->
+      <section class="py-14 lg:py-16">
+        <div class="container-base mx-auto max-w-3xl">
+          <h2 class="section-title">私たちの考え</h2>
+          <p class="section-lead">私たちは、AI技術そのものを誇示するのではなく、「現場で使えるAI」「業務改善につながるAI」「人と協働するAI活用」を大切にしています。中小企業や福祉現場に寄り添い、数学・統計・AI開発に基づいた実務的な課題解決を通じて、一人ひとりの仕事が少しでも楽に、豊かになることを目指します。</p>
+        </div>
+      </section>
+
+      <!-- 会社情報 -->
+      <section class="bg-offwhite py-14 lg:py-16">
+        <div class="container-base mx-auto max-w-3xl">
+          <h2 class="section-title">会社情報</h2>
+          <div class="mt-6 overflow-hidden rounded-2xl border border-blue-light/40 bg-white">
+            <table class="w-full text-left text-sm">
+              <tbody class="divide-y divide-blue-light/30">
+                <tr><th scope="row" class="w-40 bg-blue-pale px-5 py-4 align-top font-bold text-navy-dark">会社名</th><td class="px-5 py-4 text-ink">あるご合同会社</td></tr>
+                <tr><th scope="row" class="bg-blue-pale px-5 py-4 align-top font-bold text-navy-dark">サービス名</th><td class="px-5 py-4 text-ink">Algo AI</td></tr>
+                <tr><th scope="row" class="bg-blue-pale px-5 py-4 align-top font-bold text-navy-dark">所在地</th><td class="px-5 py-4 text-ink">（準備中）</td></tr>
+                <tr><th scope="row" class="bg-blue-pale px-5 py-4 align-top font-bold text-navy-dark">代表者</th><td class="px-5 py-4 text-ink">（準備中）</td></tr>
+                <tr><th scope="row" class="bg-blue-pale px-5 py-4 align-top font-bold text-navy-dark">事業内容</th><td class="px-5 py-4 text-ink"><ul class="space-y-1"><li>・AI導入コンサルティング</li><li>・AIアプリ・業務システム開発</li><li>・福祉・就労支援向けAI活用支援</li><li>・数学・統計コンサルティング</li></ul></td></tr>
+                <tr><th scope="row" class="bg-blue-pale px-5 py-4 align-top font-bold text-navy-dark">連絡先</th><td class="px-5 py-4 text-ink"><a href="/contact.html" class="prose-link">お問い合わせフォーム</a>よりご連絡ください</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-4 text-sm text-ink/70">※（準備中）の項目は、正式情報が確定次第掲載します。</p>
+        </div>
+      </section>
+
+      <!-- 代表（簡易） -->
+      <section class="py-14 lg:py-16">
+        <div class="container-base mx-auto max-w-3xl">
+          <h2 class="section-title">代表より</h2>
+          <p class="section-lead">数学・統計・AI開発の知見を、現場で本当に役立つ形に翻訳することが私たちの役割だと考えています。小さく始めて、使える形まで一緒に育てていく——そんな伴走支援をお届けします。</p>
+          <p class="mt-4 text-sm text-ink/70">※代表プロフィールの詳細は、今後あらためて掲載予定です。</p>
+        </div>
+      </section>
+
+      <section class="bg-navy-dark py-14 text-center text-white lg:py-16">
+        <div class="container-base">
+          <h2 class="text-2xl font-bold text-white">お気軽にお問い合わせください</h2>
+          <div class="mt-6 flex flex-wrap justify-center gap-3">
+            <a href="/contact.html" class="btn-accent" data-cta="company_contact">無料相談する</a>
+            <a href="{{ lineUrl }}" class="btn-line" data-line target="_blank" rel="noopener">LINEで相談する</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    {{> footer }}
+  </body>
+</html>

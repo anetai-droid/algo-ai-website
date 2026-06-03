@@ -1,0 +1,19 @@
+# 依存・ビルド成果物
+node_modules/
+dist/
+.vite/
+
+# 秘密情報（GitHub公開リポジトリには絶対に上げない）
+.env
+.env.local
+.env.*.local
+
+# PHPフォームのローカル設定（送信先メール等の実値）
+public/api/config.php
+
+# OS / エディタ
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/

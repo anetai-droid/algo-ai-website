@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+/* ===== デザイントークン ===== */
+@theme {
+  /* ブランドカラー */
+  --color-navy: #1b3f6e;
+  --color-navy-dark: #0f2744;
+  --color-blue-light: #a8c4e0;
+  --color-blue-pale: #ebf2f9;
+  --color-ink: #3a4553;
+  --color-offwhite: #f3f7fb;
+  --color-accent: #2bb6a3; /* 淡いシアングリーン系アクセント */
+  --color-accent-soft: #d7f0ec;
+
+  /* フォント */
+  --font-sans: "Noto Sans JP", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Noto Serif JP", ui-serif, Georgia, serif;
+  --font-mono: "Roboto Mono", ui-monospace, monospace;
+
+  /* タイポのリズム */
+  --leading-relaxed-ja: 1.9;
+}
+
+/* ===== ベース ===== */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-ink);
+    background-color: #ffffff;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--color-navy-dark);
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  /* 固定ヘッダー分のアンカーオフセット */
+  :target {
+    scroll-margin-top: 6rem;
+  }
+  /* キーボードフォーカスの視認性 */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+}
+
+/* ===== ボタンの基底（@apply で使うため @utility で定義） ===== */
+@utility btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  min-height: 48px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* ===== 再利用コンポーネント ===== */
+@layer components {
+  .container-base {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-6 lg:px-8;
+  }
+
+  /* ボタン */
+  .btn-primary {
+    @apply btn bg-navy text-white hover:bg-navy-dark;
+  }
+  .btn-accent {
+    @apply btn text-white;
+    background-color: var(--color-accent);
+  }
+  .btn-accent:hover {
+    background-color: #1f9d8c;
+  }
+  .btn-outline {
+    @apply btn border-2 border-navy bg-white text-navy hover:bg-blue-pale;
+  }
+  .btn-line {
+    @apply btn text-white;
+    background-color: #06c755;
+  }
+  .btn-line:hover {
+    background-color: #05a948;
+  }
+
+  /* セクション見出し */
+  .section-eyebrow {
+    @apply mb-2 inline-block text-sm font-bold tracking-wider text-accent uppercase;
+    font-family: var(--font-mono);
+  }
+  .section-title {
+    @apply text-2xl font-bold text-navy-dark sm:text-3xl;
+  }
+  .section-lead {
+    @apply mt-4 text-base leading-relaxed text-ink sm:text-lg;
+  }
+
+  /* カード */
+  .card {
+    @apply rounded-2xl border border-blue-light/40 bg-white p-7 shadow-sm transition-shadow duration-200 hover:shadow-md;
+  }
+
+  /* 本文リンク */
+  .prose-link {
+    @apply font-semibold text-navy underline decoration-blue-light underline-offset-4 hover:text-accent;
+  }
+
+  /* ナビリンク */
+  .nav-link {
+    @apply rounded-md px-3 py-2 text-sm font-medium text-ink transition-colors hover:bg-blue-pale hover:text-navy;
+  }
+}
+
+/* ===== ユーティリティ ===== */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  /* FAQアコーディオンの開閉アニメーション */
+  details.faq summary::-webkit-details-marker {
+    display: none;
+  }
+  details.faq[open] .faq-icon {
+    transform: rotate(45deg);
+  }
+}

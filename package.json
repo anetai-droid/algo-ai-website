@@ -1,0 +1,18 @@
+{
+  "name": "algo-ai-website",
+  "version": "0.1.0",
+  "description": "Algo AI（あるご合同会社）法人向けAI活用支援サービス 公式サイト",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.11",
+    "tailwindcss": "^4.1.11",
+    "vite": "^6.3.5",
+    "vite-plugin-handlebars": "^2.0.0"
+  }
+}

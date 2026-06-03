@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    {{> head-meta }}
+    <!-- トップページ向け FAQ 構造化データ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"AIに詳しくなくても相談できますか？","acceptedAnswer":{"@type":"Answer","text":"はい。AIに詳しくない方こそ対象です。何ができるか分からない段階から、業務に合わせて一緒に整理します。"}},
+        {"@type":"Question","name":"小規模な会社でも依頼できますか？","acceptedAnswer":{"@type":"Answer","text":"はい。小さく始めて段階的に広げる進め方を得意としています。数名規模の事業者からのご相談も歓迎です。"}},
+        {"@type":"Question","name":"福祉事業所でも導入できますか？","acceptedAnswer":{"@type":"Answer","text":"はい。就労継続支援A型・B型、福祉法人、NPOでのAI活用支援に対応しています。現場で使いやすい形で導入します。"}},
+        {"@type":"Question","name":"相談だけでも可能ですか？","acceptedAnswer":{"@type":"Answer","text":"もちろん可能です。初回相談は無料です。導入を前提とせず、現状の整理だけでもご利用いただけます。"}}
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    {{> header }}
+
+    <main id="main">
+      <!-- ===== ファーストビュー ===== -->
+      <section class="relative overflow-hidden bg-gradient-to-b from-blue-pale to-white">
+        <div class="container-base grid items-center gap-12 py-16 lg:grid-cols-2 lg:py-24">
+          <div>
+            <p class="section-eyebrow">AI × 業務改善 × 福祉現場</p>
+            <h1 class="text-balance text-3xl font-bold leading-tight text-navy-dark sm:text-4xl lg:text-5xl">
+              中小企業と福祉現場に、<br class="hidden sm:block" />実務で使えるAIを。
+            </h1>
+            <p class="mt-6 max-w-xl text-base leading-relaxed text-ink sm:text-lg">
+              Algo AIは、AI導入の相談から業務改善、AIアプリ開発、社内定着までを支援する法人向けAI活用支援サービスです。難しい言葉ではなく、現場の困りごとから一緒に始めます。
+            </p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a href="/contact.html" class="btn-primary" data-cta="hero_contact">無料相談する</a>
+              <a href="{{ lineUrl }}" class="btn-line" data-line target="_blank" rel="noopener">LINEで相談する</a>
+            </div>
+            <p class="mt-4 text-sm text-ink/70">初回相談は無料／オンライン対応可／全国対応</p>
+          </div>
+          <div class="relative">
+            <div class="rounded-3xl border border-blue-light/40 bg-white p-8 shadow-lg">
+              <div class="grid grid-cols-2 gap-4">
+                <div class="rounded-xl bg-blue-pale p-5">
+                  <p class="font-mono text-3xl font-bold text-navy">-40%</p>
+                  <p class="mt-1 text-sm text-ink">手作業・確認作業の時間</p>
+                </div>
+                <div class="rounded-xl bg-accent-soft p-5">
+                  <p class="font-mono text-3xl font-bold text-accent">4</p>
+                  <p class="mt-1 text-sm text-ink">分野の支援メニュー</p>
+                </div>
+                <div class="col-span-2 rounded-xl border border-blue-light/40 p-5">
+                  <p class="text-sm font-bold text-navy-dark">相談 → ヒアリング → 提案 → 導入 → 定着支援</p>
+                  <p class="mt-2 text-sm text-ink">小さく始めて、使える形まで伴走します。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 課題提示 ===== -->
+      <section class="py-16 lg:py-20">
+        <div class="container-base">
+          <div class="mx-auto max-w-2xl text-center">
+            <p class="section-eyebrow">こんなお悩みはありませんか</p>
+            <h2 class="section-title">「AIを使いたい」けれど、進め方がわからない</h2>
+          </div>
+          <ul class="mx-auto mt-10 grid max-w-4xl gap-4 sm:grid-cols-2">
+            <li class="flex items-start gap-3 rounded-xl bg-offwhite p-5">
+              <span class="mt-0.5 text-accent" aria-hidden="true">✓</span>
+              <span class="text-ink">AIを導入したいが、何から始めればよいかわからない</span>
+            </li>
+            <li class="flex items-start gap-3 rounded-xl bg-offwhite p-5">
+              <span class="mt-0.5 text-accent" aria-hidden="true">✓</span>
+              <span class="text-ink">ChatGPTを使っているが、業務に定着しない</span>
+            </li>
+            <li class="flex items-start gap-3 rounded-xl bg-offwhite p-5">
+              <span class="mt-0.5 text-accent" aria-hidden="true">✓</span>
+              <span class="text-ink">社内の手作業や確認作業が多い</span>
+            </li>
+            <li class="flex items-start gap-3 rounded-xl bg-offwhite p-5">
+              <span class="mt-0.5 text-accent" aria-hidden="true">✓</span>
+              <span class="text-ink">福祉現場でAIをどう使えるかわからない</span>
+            </li>
+            <li class="flex items-start gap-3 rounded-xl bg-offwhite p-5 sm:col-span-2">
+              <span class="mt-0.5 text-accent" aria-hidden="true">✓</span>
+              <span class="text-ink">自社に合ったAIツールを作りたい</span>
+            </li>
+          </ul>
+          <p class="mt-8 text-center text-ink">
+            ひとつでも当てはまれば、<a href="/contact.html" class="prose-link" data-cta="problem_contact">まずはお気軽にご相談ください。</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- ===== サービス紹介 ===== -->
+      <section class="bg-offwhite py-16 lg:py-20">
+        <div class="container-base">
+          <div class="mx-auto max-w-2xl text-center">
+            <p class="section-eyebrow">Services</p>
+            <h2 class="section-title">4つの支援メニュー</h2>
+            <p class="section-lead">相談・改善から開発・分析まで、一貫してご支援します。</p>
+          </div>
+          <div class="mt-12 grid gap-6 md:grid-cols-2">
+            <article class="card flex flex-col">
+              <h3 class="text-lg font-bold text-navy-dark">AI導入コンサルティング</h3>
+              <p class="mt-3 flex-1 text-sm leading-relaxed text-ink">業務ヒアリングからツール選定、プロンプト設計、社内研修まで。AIを「使える状態」に整えます。</p>
+              <p class="mt-4 text-xs font-bold text-accent">対象：中小企業／ChatGPTを業務活用したい法人</p>
+              <a href="/services.html#consulting" class="prose-link mt-3 text-sm" data-service-detail="consulting">詳しく見る →</a>
+            </article>
+            <article class="card flex flex-col">
+              <h3 class="text-lg font-bold text-navy-dark">AIアプリ・業務システム開発</h3>
+              <p class="mt-3 flex-1 text-sm leading-relaxed text-ink">チャットボット、業務支援Webアプリ、データ分析ツールなど。属人的な業務の自動化を実現します。</p>
+              <p class="mt-4 text-xs font-bold text-accent">対象：独自AIツール・業務支援アプリを作りたい事業者</p>
+              <a href="/services.html#development" class="prose-link mt-3 text-sm" data-service-detail="development">詳しく見る →</a>
+            </article>
+            <article class="card flex flex-col">
+              <h3 class="text-lg font-bold text-navy-dark">福祉・就労支援向けAI活用支援</h3>
+              <p class="mt-3 flex-1 text-sm leading-relaxed text-ink">就労支援事業所・福祉法人向け。支援員の負担軽減と、利用者の作業機会拡大を両立します。</p>
+              <p class="mt-4 text-xs font-bold text-accent">対象：就労継続支援A型・B型／福祉法人／NPO</p>
+              <a href="/welfare-ai.html" class="prose-link mt-3 text-sm" data-service-detail="welfare">詳しく見る →</a>
+            </article>
+            <article class="card flex flex-col">
+              <h3 class="text-lg font-bold text-navy-dark">数学・統計コンサルティング</h3>
+              <p class="mt-3 flex-1 text-sm leading-relaxed text-ink">統計解析、データ分析、数理モデル設計、アルゴリズム設計。データに基づく意思決定を支えます。</p>
+              <p class="mt-4 text-xs font-bold text-accent">対象：研究開発を進める法人・研究者・事業者</p>
+              <a href="/services.html#statistics" class="prose-link mt-3 text-sm" data-service-detail="statistics">詳しく見る →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 福祉・就労支援との協働モデル ===== -->
+      <section class="py-16 lg:py-20">
+        <div class="container-base grid items-center gap-12 lg:grid-cols-2">
+          <div>
+            <p class="section-eyebrow">Welfare × AI</p>
+            <h2 class="section-title">人とAIが協働する、新しい就労支援</h2>
+            <p class="section-lead">AIは人の仕事を奪うものではなく、人の強みを活かすための道具です。福祉現場に寄り添い、新しい仕事づくりを支援します。</p>
+            <a href="/welfare-ai.html" class="btn-outline mt-6" data-cta="welfare_detail">福祉・就労支援の取り組みを見る</a>
+          </div>
+          <ul class="grid gap-4">
+            <li class="card"><h3 class="font-bold text-navy-dark">AIを活用した新しい仕事づくり</h3><p class="mt-2 text-sm text-ink">文章作成・画像生成・データ整理など、AIで生まれる新しい作業を設計します。</p></li>
+            <li class="card"><h3 class="font-bold text-navy-dark">支援員の業務負担軽減</h3><p class="mt-2 text-sm text-ink">記録・書類作成などの定型業務をAIで効率化し、支援に時間を使えるようにします。</p></li>
+            <li class="card"><h3 class="font-bold text-navy-dark">利用者の強みに合わせた作業設計</h3><p class="mt-2 text-sm text-ink">一人ひとりの得意に合わせて、AIと組み合わせた作業を組み立てます。</p></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ===== 選ばれる理由 ===== -->
+      <section class="bg-navy-dark py-16 text-white lg:py-20">
+        <div class="container-base">
+          <div class="mx-auto max-w-2xl text-center">
+            <p class="section-eyebrow">Why Algo AI</p>
+            <h2 class="text-2xl font-bold text-white sm:text-3xl">選ばれる理由</h2>
+          </div>
+          <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div class="rounded-2xl bg-white/5 p-6"><p class="font-mono text-2xl font-bold text-accent">01</p><h3 class="mt-2 font-bold text-white">導入から開発まで一貫支援</h3><p class="mt-2 text-sm text-blue-light/90">相談・業務改善から、ツール開発・運用まで切れ目なく対応します。</p></div>
+            <div class="rounded-2xl bg-white/5 p-6"><p class="font-mono text-2xl font-bold text-accent">02</p><h3 class="mt-2 font-bold text-white">現場に合わせた提案</h3><p class="mt-2 text-sm text-blue-light/90">中小企業・福祉現場の実情に合わせ、無理のない形を提案します。</p></div>
+            <div class="rounded-2xl bg-white/5 p-6"><p class="font-mono text-2xl font-bold text-accent">03</p><h3 class="mt-2 font-bold text-white">数学・統計・AI開発の技術力</h3><p class="mt-2 text-sm text-blue-light/90">数理的な裏付けに基づいた、実務的な課題解決ができます。</p></div>
+            <div class="rounded-2xl bg-white/5 p-6"><p class="font-mono text-2xl font-bold text-accent">04</p><h3 class="mt-2 font-bold text-white">小さく始めて段階的に拡張</h3><p class="mt-2 text-sm text-blue-light/90">いきなり大きく作らず、効果を確かめながら広げられます。</p></div>
+            <div class="rounded-2xl bg-white/5 p-6"><p class="font-mono text-2xl font-bold text-accent">05</p><h3 class="mt-2 font-bold text-white">使える形まで伴走</h3><p class="mt-2 text-sm text-blue-light/90">導入して終わりではなく、社内に定着するまで寄り添います。</p></div>
+            <div class="flex items-center justify-center rounded-2xl bg-accent/15 p-6"><a href="/contact.html" class="btn-accent" data-cta="reasons_contact">まずは相談する</a></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== FAQ ===== -->
+      <section class="py-16 lg:py-20">
+        <div class="container-base mx-auto max-w-3xl">
+          <div class="text-center">
+            <p class="section-eyebrow">FAQ</p>
+            <h2 class="section-title">よくあるご質問</h2>
+          </div>
+          <div class="mt-10 space-y-3">
+            <details class="faq rounded-xl border border-blue-light/40 bg-white p-5">
+              <summary class="flex cursor-pointer items-center justify-between font-bold text-navy-dark">AIに詳しくなくても相談できますか？<span class="faq-icon ml-4 text-accent transition-transform" aria-hidden="true">＋</span></summary>
+              <p class="mt-3 text-ink">はい。AIに詳しくない方こそ対象です。何ができるか分からない段階から、業務に合わせて一緒に整理します。</p>
+            </details>
+            <details class="faq rounded-xl border border-blue-light/40 bg-white p-5">
+              <summary class="flex cursor-pointer items-center justify-between font-bold text-navy-dark">小規模な会社でも依頼できますか？<span class="faq-icon ml-4 text-accent transition-transform" aria-hidden="true">＋</span></summary>
+              <p class="mt-3 text-ink">はい。小さく始めて段階的に広げる進め方を得意としています。数名規模の事業者からのご相談も歓迎です。</p>
+            </details>
+            <details class="faq rounded-xl border border-blue-light/40 bg-white p-5">
+              <summary class="flex cursor-pointer items-center justify-between font-bold text-navy-dark">福祉事業所でも導入できますか？<span class="faq-icon ml-4 text-accent transition-transform" aria-hidden="true">＋</span></summary>
+              <p class="mt-3 text-ink">はい。就労継続支援A型・B型、福祉法人、NPOでのAI活用支援に対応しています。現場で使いやすい形で導入します。</p>
+            </details>
+            <details class="faq rounded-xl border border-blue-light/40 bg-white p-5">
+              <summary class="flex cursor-pointer items-center justify-between font-bold text-navy-dark">相談だけでも可能ですか？<span class="faq-icon ml-4 text-accent transition-transform" aria-hidden="true">＋</span></summary>
+              <p class="mt-3 text-ink">もちろん可能です。初回相談は無料です。導入を前提とせず、現状の整理だけでもご利用いただけます。</p>
+            </details>
+          </div>
+          <p class="mt-8 text-center"><a href="/pricing-faq.html" class="prose-link">料金・その他のFAQを見る →</a></p>
+        </div>
+      </section>
+
+      <!-- ===== 問い合わせCTA ===== -->
+      <section class="bg-gradient-to-r from-navy to-navy-dark py-16 text-white lg:py-20">
+        <div class="container-base text-center">
+          <h2 class="text-2xl font-bold text-white sm:text-3xl">AI活用について、まずはお気軽にご相談ください。</h2>
+          <p class="mt-4 text-blue-light/90">初回相談は無料です。オンラインでも全国対応しています。</p>
+          <div class="mt-8 flex flex-wrap justify-center gap-3">
+            <a href="/contact.html" class="btn-accent" data-cta="bottom_contact">無料相談する</a>
+            <a href="{{ lineUrl }}" class="btn-line" data-line target="_blank" rel="noopener">LINEで相談する</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    {{> footer }}
+  </body>
+</html>

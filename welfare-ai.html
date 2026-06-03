@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    {{> head-meta }}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "福祉・就労支援向けAI活用支援",
+      "serviceType": "AI活用支援",
+      "provider": {"@type":"Organization","name":"あるご合同会社","alternateName":"Algo AI"},
+      "areaServed": "JP",
+      "audience": {"@type":"Audience","audienceType":"就労継続支援A型・B型事業所／福祉法人／NPO"},
+      "description": "支援員の業務負担軽減と利用者の作業機会拡大を両立する、福祉現場向けのAI活用支援。"
+    }
+    </script>
+  </head>
+  <body>
+    {{> header }}
+
+    <main id="main">
+      <section class="bg-gradient-to-b from-accent-soft to-white py-14 lg:py-20">
+        <div class="container-base max-w-3xl">
+          <p class="section-eyebrow">Welfare × AI</p>
+          <h1 class="text-balance text-3xl font-bold leading-tight text-navy-dark sm:text-4xl">人とAIが協働する、<br class="hidden sm:block" />新しい就労支援のかたち</h1>
+          <p class="section-lead">AIは人の仕事を奪うものではなく、人の強みを活かすための道具です。Algo AIは、就労支援事業所・福祉法人の現場に寄り添い、支援員の負担を減らしながら、利用者の新しい仕事づくりを支援します。</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="/contact.html" class="btn-accent" data-cta="welfare_hero_contact">無料相談する</a>
+            <a href="{{ lineUrl }}" class="btn-line" data-line target="_blank" rel="noopener">LINEで相談する</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 対象 -->
+      <section class="py-14 lg:py-16">
+        <div class="container-base">
+          <h2 class="section-title">こんな事業者の方へ</h2>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <span class="rounded-full bg-blue-pale px-4 py-2 text-sm font-medium text-navy">就労継続支援A型・B型事業所</span>
+            <span class="rounded-full bg-blue-pale px-4 py-2 text-sm font-medium text-navy">福祉法人</span>
+            <span class="rounded-full bg-blue-pale px-4 py-2 text-sm font-medium text-navy">NPO</span>
+            <span class="rounded-full bg-blue-pale px-4 py-2 text-sm font-medium text-navy">障害者雇用に取り組む企業</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 福祉現場における課題 -->
+      <section class="bg-offwhite py-14 lg:py-16">
+        <div class="container-base">
+          <h2 class="section-title">福祉現場における課題</h2>
+          <ul class="mt-8 grid gap-4 md:grid-cols-2">
+            <li class="card"><p class="text-ink">記録・書類作成などの事務作業が多く、支援に十分な時間を割けない</p></li>
+            <li class="card"><p class="text-ink">利用者に合った作業の種類が限られ、工賃向上につながりにくい</p></li>
+            <li class="card"><p class="text-ink">AIに関心はあるが、現場でどう使えるかイメージできない</p></li>
+            <li class="card"><p class="text-ink">新しいツールを入れても、支援員が使いこなせるか不安</p></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- AIで支援できる業務 -->
+      <section class="py-14 lg:py-16">
+        <div class="container-base">
+          <h2 class="section-title">AIで支援できる業務</h2>
+          <div class="mt-8 grid gap-6 lg:grid-cols-2">
+            <div class="card">
+              <h3 class="font-bold text-navy-dark">利用者の作業支援</h3>
+              <ul class="mt-3 space-y-1.5 text-sm text-ink">
+                <li>・AIを使った文章作成（記事・SNS・説明文など）</li>
+                <li>・画像生成によるデザイン・制作作業</li>
+                <li>・データ入力・整理・チェック作業の補助</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 class="font-bold text-navy-dark">支援員の業務効率化</h3>
+              <ul class="mt-3 space-y-1.5 text-sm text-ink">
+                <li>・支援記録・報告書の下書き作成</li>
+                <li>・案内文・お知らせ文の作成</li>
+                <li>・資料・研修教材の準備</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 協働モデルの価値 -->
+      <section class="bg-navy-dark py-14 text-white lg:py-16">
+        <div class="container-base">
+          <h2 class="text-2xl font-bold text-white sm:text-3xl">人とAIが協働することで生まれる価値</h2>
+          <div class="mt-8 grid gap-6 md:grid-cols-2">
+            <div class="rounded-2xl bg-white/5 p-6"><h3 class="font-bold text-white">支援員の業務負担軽減</h3><p class="mt-2 text-sm text-blue-light/90">定型業務をAIに任せ、利用者と向き合う時間を増やせます。</p></div>
+            <div class="rounded-2xl bg-white/5 p-6"><h3 class="font-bold text-white">利用者の作業機会拡大</h3><p class="mt-2 text-sm text-blue-light/90">AIと組み合わせることで、これまで難しかった作業にも取り組めます。</p></div>
+            <div class="rounded-2xl bg-white/5 p-6"><h3 class="font-bold text-white">就労支援業務の効率化</h3><p class="mt-2 text-sm text-blue-light/90">作業の流れを整理し、無理なく回る仕組みをつくります。</p></div>
+            <div class="rounded-2xl bg-white/5 p-6"><h3 class="font-bold text-white">AIを活用した新しい仕事づくり</h3><p class="mt-2 text-sm text-blue-light/90">利用者の強みに合わせた、新しい受注・作業を設計します。</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 導入ステップ -->
+      <section class="py-14 lg:py-16">
+        <div class="container-base">
+          <h2 class="section-title">導入ステップ</h2>
+          <ol class="mt-8 space-y-4">
+            <li class="flex gap-4"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent font-mono font-bold text-white">1</span><div><p class="font-bold text-navy-dark">現場のヒアリング</p><p class="text-sm text-ink">支援内容・作業・体制をうかがい、AIが役立つ場面を整理します。</p></div></li>
+            <li class="flex gap-4"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent font-mono font-bold text-white">2</span><div><p class="font-bold text-navy-dark">小さく試す</p><p class="text-sm text-ink">負担の少ない業務から、まずは試験的にAIを取り入れます。</p></div></li>
+            <li class="flex gap-4"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent font-mono font-bold text-white">3</span><div><p class="font-bold text-navy-dark">支援員向け研修</p><p class="text-sm text-ink">支援員が無理なく使えるよう、操作と活用のコツを共有します。</p></div></li>
+            <li class="flex gap-4"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent font-mono font-bold text-white">4</span><div><p class="font-bold text-navy-dark">定着・改善</p><p class="text-sm text-ink">現場の声を聞きながら、使い方と作業設計を改善していきます。</p></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="bg-accent-soft py-14 text-center lg:py-16">
+        <div class="container-base">
+          <h2 class="text-2xl font-bold text-navy-dark">福祉現場でのAI活用、まずはご相談ください</h2>
+          <p class="mt-3 text-ink">「うちの事業所でも使えるか知りたい」という段階から歓迎します。</p>
+          <div class="mt-6 flex flex-wrap justify-center gap-3">
+            <a href="/contact.html" class="btn-primary" data-cta="welfare_bottom_contact">無料相談する</a>
+            <a href="{{ lineUrl }}" class="btn-line" data-line target="_blank" rel="noopener">LINEで相談する</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    {{> footer }}
+  </body>
+</html>

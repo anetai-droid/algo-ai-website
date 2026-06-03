@@ -1,0 +1,57 @@
+<a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-navy focus:px-4 focus:py-2 focus:text-white">本文へスキップ</a>
+
+<header class="sticky top-0 z-40 border-b border-blue-light/30 bg-white/95 backdrop-blur">
+  <div class="container-base flex h-16 items-center justify-between lg:h-20">
+    <!-- ロゴ -->
+    <a href="/" class="flex items-center gap-2" aria-label="Algo AI ホーム">
+      <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-navy text-white" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3 3 8v8l9 5 9-5V8z" />
+          <path d="M12 12 3 8m9 4 9-4m-9 4v9" />
+        </svg>
+      </span>
+      <span class="text-xl font-bold tracking-tight text-navy-dark">Algo<span class="text-accent"> AI</span></span>
+    </a>
+
+    <!-- PCナビ -->
+    <nav class="hidden items-center gap-1 lg:flex" aria-label="グローバルナビゲーション">
+      <a href="/" class="nav-link" data-nav-path="/">ホーム</a>
+      <a href="/services.html" class="nav-link" data-nav-path="/services.html">サービス</a>
+      <a href="/welfare-ai.html" class="nav-link" data-nav-path="/welfare-ai.html">福祉・就労支援</a>
+      <a href="/flow.html" class="nav-link" data-nav-path="/flow.html">ご利用の流れ</a>
+      <a href="/pricing-faq.html" class="nav-link" data-nav-path="/pricing-faq.html">料金・FAQ</a>
+      <a href="/company.html" class="nav-link" data-nav-path="/company.html">会社概要</a>
+      <a href="/contact.html" class="btn-primary ml-2 px-5 py-2.5 text-sm" data-cta="header_contact">無料相談する</a>
+    </nav>
+
+    <!-- SPメニューボタン -->
+    <button
+      type="button"
+      class="inline-flex h-11 w-11 items-center justify-center rounded-md text-navy-dark lg:hidden"
+      data-menu-toggle
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      aria-label="メニューを開く"
+    >
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6" />
+        <line x1="3" y1="12" x2="21" y2="12" />
+        <line x1="3" y1="18" x2="21" y2="18" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- SPメニュー本体 -->
+  <div id="mobile-menu" class="hidden border-t border-blue-light/30 bg-white lg:hidden" data-mobile-menu>
+    <nav class="container-base flex flex-col gap-1 py-4" aria-label="モバイルナビゲーション">
+      <a href="/" class="rounded-md px-3 py-3 text-base font-medium text-ink hover:bg-blue-pale" data-nav-path="/">ホーム</a>
+      <a href="/services.html" class="rounded-md px-3 py-3 text-base font-medium text-ink hover:bg-blue-pale" data-nav-path="/services.html">サービス</a>
+      <a href="/welfare-ai.html" class="rounded-md px-3 py-3 text-base font-medium text-ink hover:bg-blue-pale" data-nav-path="/welfare-ai.html">福祉・就労支援</a>
+      <a href="/flow.html" class="rounded-md px-3 py-3 text-base font-medium text-ink hover:bg-blue-pale" data-nav-path="/flow.html">ご利用の流れ</a>
+      <a href="/pricing-faq.html" class="rounded-md px-3 py-3 text-base font-medium text-ink hover:bg-blue-pale" data-nav-path="/pricing-faq.html">料金・FAQ</a>
+      <a href="/company.html" class="rounded-md px-3 py-3 text-base font-medium text-ink hover:bg-blue-pale" data-nav-path="/company.html">会社概要</a>
+      <a href="/contact.html" class="btn-primary mt-2 w-full" data-cta="mobile_contact">無料相談する</a>
+      <a href="{{ lineUrl }}" class="btn-line mt-1 w-full" data-line target="_blank" rel="noopener">LINEで相談する</a>
+    </nav>
+  </div>
+</header>

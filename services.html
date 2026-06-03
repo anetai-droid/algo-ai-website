@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    {{> head-meta }}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {"@type":"Service","position":1,"name":"AI導入コンサルティング","provider":{"@type":"Organization","name":"あるご合同会社"},"description":"業務ヒアリングからツール選定、プロンプト設計、社内研修まで一貫支援。"},
+        {"@type":"Service","position":2,"name":"AIアプリ・業務システム開発","provider":{"@type":"Organization","name":"あるご合同会社"},"description":"AIチャットボット・業務支援Webアプリ・データ分析ツールの開発。"},
+        {"@type":"Service","position":3,"name":"福祉・就労支援向けAI活用支援","provider":{"@type":"Organization","name":"あるご合同会社"},"description":"就労支援事業所・福祉法人向けのAI活用業務設計と研修。"},
+        {"@type":"Service","position":4,"name":"数学・統計コンサルティング","provider":{"@type":"Organization","name":"あるご合同会社"},"description":"統計解析・データ分析・数理モデル設計・アルゴリズム設計。"}
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    {{> header }}
+
+    <main id="main">
+      <!-- ページヘッダー -->
+      <section class="bg-blue-pale py-14 lg:py-20">
+        <div class="container-base">
+          <p class="section-eyebrow">Services</p>
+          <h1 class="section-title text-3xl sm:text-4xl">サービス一覧</h1>
+          <p class="section-lead max-w-2xl">AI導入の相談から開発、福祉支援、データ分析まで。自社の課題に合わせて選べる4つの支援メニューをご用意しています。</p>
+        </div>
+      </section>
+
+      <!-- 目次 -->
+      <nav class="border-b border-blue-light/30 bg-white" aria-label="サービス目次">
+        <div class="container-base flex flex-wrap gap-2 py-4 text-sm">
+          <a href="#consulting" class="nav-link">AI導入コンサルティング</a>
+          <a href="#development" class="nav-link">AIアプリ・開発</a>
+          <a href="#welfare" class="nav-link">福祉・就労支援</a>
+          <a href="#statistics" class="nav-link">数学・統計</a>
+        </div>
+      </nav>
+
+      <!-- 5.1 AI導入コンサルティング -->
+      <section id="consulting" class="py-14 lg:py-20">
+        <div class="container-base">
+          <span class="font-mono text-sm font-bold text-accent">01</span>
+          <h2 class="section-title mt-1">AI導入コンサルティング</h2>
+          <p class="section-lead max-w-3xl">「AIで何ができるかわからない」段階から伴走し、業務に合うAI活用を設計します。</p>
+          <div class="mt-8 grid gap-6 lg:grid-cols-2">
+            <div class="card">
+              <h3 class="font-bold text-navy-dark">対象者</h3>
+              <ul class="mt-3 space-y-1.5 text-sm text-ink">
+                <li>・AIを導入したい中小企業</li>
+                <li>・ChatGPTを業務活用したい法人</li>
+                <li>・社内業務を効率化したい事業者</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 class="font-bold text-navy-dark">解決できる課題</h3>
+              <ul class="mt-3 space-y-1.5 text-sm text-ink">
+                <li>・AIで何ができるかわからない</li>
+                <li>・社内にAI人材がいない</li>
+                <li>・業務に合うAIツールを選べない</li>
+                <li>・導入しても定着しない</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 class="font-bold text-navy-dark">提供内容</h3>
+              <ul class="mt-3 space-y-1.5 text-sm text-ink">
+                <li>・業務ヒアリング／AI活用可能性の整理</li>
+                <li>・ツール選定／プロンプト設計</li>
+                <li>・業務フロー改善</li>
+                <li>・社内向けAI活用研修</li>
+              </ul>
+            </div>
+            <div class="card bg-accent-soft/40">
+              <h3 class="font-bold text-navy-dark">想定成果</h3>
+              <ul class="mt-3 space-y-1.5 text-sm text-ink">
+                <li>・業務時間の削減</li>
+                <li>・社内ナレッジ活用の効率化</li>
+                <li>・問い合わせ対応や資料作成の効率化</li>
+                <li>・AI活用の社内定着</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-6 rounded-xl border-l-4 border-accent bg-offwhite p-5">
+            <p class="text-sm font-bold text-navy-dark">よくある相談例</p>
+            <p class="mt-1 text-sm text-ink">「ChatGPTを契約したが、結局一部の社員しか使っていない。全社で使える形にしたい。」</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5.2 AIアプリ・業務システム開発 -->
+      <section id="development" class="bg-offwhite py-14 lg:py-20">
+        <div class="container-base">
+          <span class="font-mono text-sm font-bold text-accent">02</span>
+          <h2 class="section-title mt-1">AIアプリ・業務システム開発</h2>
+          <p class="section-lead max-w-3xl">独自のAIツールや業務支援アプリを開発し、属人的な業務を自動化します。</p>
+          <div class="mt-8 grid gap-6 lg:grid-cols-2">
+            <div class="card">
+              <h3 class="font-bold text-navy-dark">対象者</h3>
+              <ul class="mt-3 space-y-1.5 text-sm text-ink">
+                <li>・独自AIツールを開発したい企業</li>
+                <li>・チャットボットを導入したい法人</li>
+                <li>・業務支援アプリを作りたい事業者</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 class="font-bold text-navy-dark">提供内容</h3>
+              <ul class="mt-3 space-y-1.5 text-sm text-ink">
+                <li>・AIチャットボット開発</li>
+                <li>・業務支援Webアプリ開発／社内向けAIツール開発</li>
+                <li>・データ分析ツール開発／API連携</li>
+                <li>・プロトタイプ開発</li>
+              </ul>
+            </div>
+            <div class="card bg-accent-soft/40 lg:col-span-2">
+              <h3 class="font-bold text-navy-dark">想定成果</h3>
+              <ul class="mt-3 grid gap-1.5 text-sm text-ink sm:grid-cols-2">
+                <li>・属人的業務の削減</li>
+                <li>・顧客対応の効率化</li>
+                <li>・データ活用の促進</li>
+                <li>・社内業務の自動化</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-6 rounded-xl border-l-4 border-accent bg-white p-5">
+            <p class="text-sm font-bold text-navy-dark">よくある相談例</p>
+            <p class="mt-1 text-sm text-ink">「問い合わせ対応をチャットボットで自動化したい。まずは小さく試したい。」</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5.3 福祉・就労支援（詳細は専用ページへ） -->
+      <section id="welfare" class="py-14 lg:py-20">
+        <div class="container-base">
+          <span class="font-mono text-sm font-bold text-accent">03</span>
+          <h2 class="section-title mt-1">福祉・就労支援向けAI活用支援</h2>
+          <p class="section-lead max-w-3xl">就労継続支援A型・B型、福祉法人、NPO向けに、支援員の負担軽減と利用者の作業機会拡大を両立するAI活用を支援します。</p>
+          <div class="mt-8 grid gap-6 lg:grid-cols-2">
+            <div class="card">
+              <h3 class="font-bold text-navy-dark">提供内容</h3>
+              <ul class="mt-3 space-y-1.5 text-sm text-ink">
+                <li>・AIを活用した業務設計</li>
+                <li>・利用者の作業支援（文章作成・画像生成・データ整理）</li>
+                <li>・支援員向けAI活用研修</li>
+                <li>・福祉現場で使いやすいAIツール導入支援</li>
+              </ul>
+            </div>
+            <div class="card bg-accent-soft/40">
+              <h3 class="font-bold text-navy-dark">想定成果</h3>
+              <ul class="mt-3 space-y-1.5 text-sm text-ink">
+                <li>・支援員の業務負担軽減</li>
+                <li>・利用者の作業機会拡大</li>
+                <li>・就労支援業務の効率化</li>
+                <li>・AIを活用した新しい仕事づくり</li>
+              </ul>
+            </div>
+          </div>
+          <a href="/welfare-ai.html" class="btn-outline mt-6" data-service-detail="welfare">福祉・就労支援の詳細を見る →</a>
+        </div>
+      </section>
+
+      <!-- 5.4 数学・統計コンサルティング -->
+      <section id="statistics" class="bg-offwhite py-14 lg:py-20">
+        <div class="container-base">
+          <span class="font-mono text-sm font-bold text-accent">04</span>
+          <h2 class="section-title mt-1">数学・統計コンサルティング</h2>
+          <p class="section-lead max-w-3xl">統計解析や数理モデルを用いて、データに基づく意思決定と研究・開発を支援します。</p>
+          <div class="mt-8 grid gap-6 lg:grid-cols-2">
+            <div class="card">
+              <h3 class="font-bold text-navy-dark">対象者</h3>
+              <ul class="mt-3 space-y-1.5 text-sm text-ink">
+                <li>・データ分析を行いたい事業者</li>
+                <li>・研究開発を進める法人・研究者</li>
+                <li>・統計解析や数理モデルを必要とする組織</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 class="font-bold text-navy-dark">提供内容</h3>
+              <ul class="mt-3 space-y-1.5 text-sm text-ink">
+                <li>・統計解析／データ分析</li>
+                <li>・数理モデル設計／アルゴリズム設計</li>
+                <li>・研究開発支援／分析結果の可視化</li>
+              </ul>
+            </div>
+            <div class="card bg-accent-soft/40 lg:col-span-2">
+              <h3 class="font-bold text-navy-dark">想定成果</h3>
+              <ul class="mt-3 grid gap-1.5 text-sm text-ink sm:grid-cols-3">
+                <li>・データに基づく意思決定</li>
+                <li>・研究・開発業務の高度化</li>
+                <li>・事業課題の定量的な把握</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="bg-navy-dark py-14 text-center text-white lg:py-16">
+        <div class="container-base">
+          <h2 class="text-2xl font-bold text-white">どのサービスが合うか分からなくても大丈夫です</h2>
+          <p class="mt-3 text-blue-light/90">現状をうかがって、最適な進め方をご提案します。初回相談は無料です。</p>
+          <div class="mt-6 flex flex-wrap justify-center gap-3">
+            <a href="/contact.html" class="btn-accent" data-cta="services_contact">無料相談する</a>
+            <a href="/flow.html" class="btn-outline border-white text-white hover:bg-white/10" data-cta="services_flow">ご利用の流れを見る</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    {{> footer }}
+  </body>
+</html>
