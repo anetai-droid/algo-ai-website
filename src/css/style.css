@@ -68,6 +68,7 @@
   .btn-line:hover { background-color: #05b14c; transform: translateY(-2px); }
 
   .section { @apply py-16 lg:py-24; }
+  .challenge-section-compact { @apply py-10 lg:py-14; }
   .section-eyebrow { @apply mb-3 inline-flex items-center gap-2 text-xs font-bold tracking-[0.22em] uppercase; color: var(--color-accent-deep); font-family: var(--font-mono); }
   .section-eyebrow::before { content: ""; display: inline-block; width: 1.75rem; height: 2px; border-radius: 2px; background: linear-gradient(90deg, var(--color-accent-bright), var(--color-accent-deep)); }
   .section-eyebrow-center { @apply justify-center; }
@@ -95,6 +96,12 @@
 
   .prose-link { @apply font-semibold underline decoration-2 underline-offset-4; color: var(--color-accent-deep); text-decoration-color: color-mix(in srgb, var(--color-accent) 45%, transparent); transition: color 0.18s ease; }
   .prose-link:hover { color: var(--color-navy-dark); }
+
+  .challenge-feature { @apply mx-auto mt-8 grid max-w-6xl items-center gap-8 lg:grid-cols-[1.2fr_0.9fr]; }
+  .challenge-image { @apply min-h-[330px]; background: url("../images/visual-data-illustration.png") center/contain no-repeat; }
+  .challenge-list { @apply grid gap-2.5; }
+  .challenge-list li { @apply flex items-start gap-3 rounded-lg border border-line bg-white px-5 py-3.5 text-left text-sm font-medium leading-relaxed text-ink shadow-sm; }
+  .challenge-list li span { @apply mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent-soft text-accent-deep; }
 
   .nav-link { @apply relative rounded-md px-3 py-2 text-sm font-bold transition-colors; color: var(--color-ink-soft); }
   .nav-link:hover { color: var(--color-accent-deep); background: var(--color-mist); }
@@ -127,8 +134,12 @@
   .page-hero { @apply relative overflow-hidden py-16 lg:py-20; background: radial-gradient(100% 120% at 90% -20%, rgba(63, 154, 224, 0.18), transparent 60%), linear-gradient(180deg, var(--color-mist), #ffffff); }
   .page-hero::after { content: ""; position: absolute; inset: 0; background-image: linear-gradient(rgba(31, 78, 121, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(31, 78, 121, 0.05) 1px, transparent 1px); background-size: 44px 44px; -webkit-mask-image: radial-gradient(80% 100% at 85% 0%, #000, transparent 70%); mask-image: radial-gradient(80% 100% at 85% 0%, #000, transparent 70%); pointer-events: none; }
 
-  .section-dark { @apply relative overflow-hidden text-white; background: radial-gradient(90% 120% at 80% -10%, rgba(255, 255, 255, 0.10), transparent 55%), linear-gradient(160deg, #686666 0%, #585656 100%); }
+  .section-dark { @apply relative overflow-hidden text-white; background: linear-gradient(rgba(88, 86, 86, 0.82), rgba(88, 86, 86, 0.86)), url("../images/service-office-green.png") center/cover; }
   .section-dark::before { content: ""; position: absolute; inset: 0; background-image: linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px); background-size: 52px 52px; -webkit-mask-image: radial-gradient(120% 90% at 75% 10%, #000 40%, transparent 80%); mask-image: radial-gradient(120% 90% at 75% 10%, #000 40%, transparent 80%); pointer-events: none; }
+  .site-footer { @apply relative overflow-hidden text-white; background: #3f3f3f; }
+  .bottom-cta-band { @apply relative overflow-hidden text-white; background: linear-gradient(90deg, rgba(36, 185, 218, 0.80), rgba(32, 115, 190, 0.84)), url("../images/bottom-cta-bg.png") center/cover; }
+  .bottom-cta-band::before { content: "SERVICE"; position: absolute; top: 1.2rem; right: max(1.5rem, calc((100% - 72rem) / 2)); color: rgba(255, 255, 255, 0.18); font-family: var(--font-mono); font-size: clamp(3rem, 9vw, 7rem); font-weight: 700; letter-spacing: 0.08em; line-height: 1; pointer-events: none; }
+  .bottom-cta-band::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0)); pointer-events: none; }
   .glass-card { @apply relative rounded-2xl border p-6; background: rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.12); transition: transform 0.22s ease, background-color 0.22s ease; }
   .glass-card:hover { transform: translateY(-4px); background: rgba(255, 255, 255, 0.09); }
 
