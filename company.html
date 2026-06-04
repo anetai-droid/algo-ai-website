@@ -2,6 +2,26 @@
 <html lang="ja">
   <head>
     {{> head-meta }}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "あるご合同会社",
+      "alternateName": "Algo AI",
+      "url": "{{ siteUrl }}",
+      "areaServed": "JP",
+      "address": {
+        "@type": "PostalAddress",
+        "postalCode": "133-0051",
+        "streetAddress": "北小岩5-30-14 カサフェリース101",
+        "addressLocality": "江戸川区",
+        "addressRegion": "東京都",
+        "addressCountry": "JP"
+      },
+      "telephone": "03-5809-2771",
+      "knowsAbout": ["AI導入支援", "AIアプリ開発", "数学", "統計", "業務改善", "福祉・就労支援"]
+    }
+    </script>
   </head>
   <body>
     {{> header }}
@@ -11,49 +31,118 @@
         <div class="container-base relative z-10">
           <p class="section-eyebrow">Company</p>
           <h1 class="section-title text-3xl sm:text-4xl lg:text-5xl">会社概要</h1>
+          <p class="section-lead max-w-2xl">Algo AIは、あるご合同会社が運営する法人向けAI活用支援サービスです。AI・VR等のIT開発、数学・統計コンサルティングで培った知見を、現場で使える形に翻訳して伴走します。</p>
         </div>
       </section>
 
-      <!-- 企業メッセージ -->
       <section class="py-14 lg:py-16">
-        <div class="container-base mx-auto max-w-3xl">
-          <h2 class="section-title">私たちの考え</h2>
-          <p class="section-lead">私たちは、AI技術そのものを誇示するのではなく、「現場で使えるAI」「業務改善につながるAI」「人と協働するAI活用」を大切にしています。中小企業や福祉現場に寄り添い、数学・統計・AI開発に基づいた実務的な課題解決を通じて、一人ひとりの仕事が少しでも楽に、豊かになることを目指します。</p>
+        <div class="container-base grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+          <div>
+            <p class="section-eyebrow">Policy</p>
+            <h2 class="section-title">私たちの考え</h2>
+            <p class="section-lead">あるご合同会社は、AI・VR等のIT開発関連業務、数学・統計学のコンサルティング、Web制作などを手がけてきました。Algo AIではその中でもAI活用支援に焦点を当て、実務で役立つ形に整えることを重視しています。</p>
+          </div>
+          <div class="grid gap-5 sm:grid-cols-2">
+            <div class="card"><h3 class="font-bold text-navy-dark">現場起点</h3><p class="mt-2 text-sm text-ink-soft">業務の流れ、担当者の負担、運用のしやすさから設計します。</p></div>
+            <div class="card"><h3 class="font-bold text-navy-dark">小さく始める</h3><p class="mt-2 text-sm text-ink-soft">最初から大きく作らず、効果を確かめながら広げます。</p></div>
+            <div class="card"><h3 class="font-bold text-navy-dark">数理的な裏付け</h3><p class="mt-2 text-sm text-ink-soft">数学・統計・データ分析の視点で課題を整理します。</p></div>
+            <div class="card"><h3 class="font-bold text-navy-dark">人とAIの協働</h3><p class="mt-2 text-sm text-ink-soft">AIに任せきるのではなく、人の判断を支える道具として活用します。</p></div>
+          </div>
         </div>
       </section>
 
-      <!-- 会社情報 -->
+      <section class="section-dark py-14 lg:py-16">
+        <div class="container-base relative z-10">
+          <div class="mx-auto max-w-3xl text-center">
+            <p class="section-eyebrow section-eyebrow-center" style="color:#8fc6ef">Strength</p>
+            <h2 class="text-2xl font-bold text-white sm:text-3xl">Algo AIの支援領域</h2>
+            <p class="mt-4 text-white/75">AI導入・開発・福祉現場での活用・数学統計を横断し、相談から定着まで一貫して支援します。</p>
+          </div>
+          <div class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            <div class="glass-card"><h3 class="font-bold text-white">AI導入</h3><p class="mt-2 text-sm text-white/70">業務整理、ツール選定、プロンプト設計、研修。</p></div>
+            <div class="glass-card"><h3 class="font-bold text-white">AI開発</h3><p class="mt-2 text-sm text-white/70">業務アプリ、チャットボット、データ分析ツール。</p></div>
+            <div class="glass-card"><h3 class="font-bold text-white">福祉AI</h3><p class="mt-2 text-sm text-white/70">支援員の負担軽減と利用者の作業機会づくり。</p></div>
+            <div class="glass-card"><h3 class="font-bold text-white">数学・統計</h3><p class="mt-2 text-sm text-white/70">統計解析、数理モデル、データに基づく意思決定。</p></div>
+          </div>
+        </div>
+      </section>
+
       <section class="bg-offwhite py-14 lg:py-16">
-        <div class="container-base mx-auto max-w-3xl">
-          <h2 class="section-title">会社情報</h2>
-          <div class="mt-6">
-            <table class="data-table">
+        <div class="container-base grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+          <div>
+            <p class="section-eyebrow">Representative</p>
+            <h2 class="section-title">代表プロフィール</h2>
+            <p class="section-lead">代表の澤田は、AI・UNIX、3次元CG・VR、画像認識、金融システム、医療・教育領域など、幅広いシステム開発・教育・コンサルティングに携わってきました。</p>
+          </div>
+          <div class="grid gap-5">
+            <div class="card">
+              <h3 class="font-bold text-navy-dark">主な経験領域</h3>
+              <ul class="mt-3 grid gap-2 text-sm text-ink sm:grid-cols-2">
+                <li>・LISP、AI/UNIX関連の開発・教育</li>
+                <li>・3次元CG、VR、文字認識、画像認識</li>
+                <li>・金融派生商品予測、証券・帳票系システム</li>
+                <li>・医療、教育、Web、iPhoneアプリ開発支援</li>
+              </ul>
+            </div>
+            <div class="card bg-accent-soft/60">
+              <h3 class="font-bold text-navy-dark">Algo AIに活きる強み</h3>
+              <p class="mt-2 text-sm text-ink">長年の開発・教育・保守運用経験をもとに、AIを単なる流行技術としてではなく、業務改善・教育・現場定着の視点から設計します。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-14 lg:py-16">
+        <div class="container-base">
+          <div class="mx-auto max-w-3xl text-center">
+            <p class="section-eyebrow section-eyebrow-center">Track Record</p>
+            <h2 class="section-title">開発・研究・教育領域での実績</h2>
+            <p class="section-lead">個人事業主時代を含め、AI・IT・VR等の研究開発、金融商品開発、教育、製造、帳票、画像認識など幅広い領域に関わっています。</p>
+          </div>
+          <div class="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            <div class="card"><h3 class="font-bold text-navy-dark">AI・研究開発</h3><p class="mt-2 text-sm text-ink-soft">AI関連研究、VR、音声認識、画像認識、アルゴリズム改善など。</p></div>
+            <div class="card"><h3 class="font-bold text-navy-dark">金融・業務システム</h3><p class="mt-2 text-sm text-ink-soft">有価証券管理、金融派生商品予測、帳票、POS、経理、人事など。</p></div>
+            <div class="card"><h3 class="font-bold text-navy-dark">教育・研修</h3><p class="mt-2 text-sm text-ink-soft">新人教育、情報リテラシー、Web制作指導、就職支援セミナー講師など。</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-offwhite py-14 lg:py-16">
+        <div class="container-base grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+          <div>
+            <p class="section-eyebrow">Profile</p>
+            <h2 class="section-title">運営会社</h2>
+            <p class="section-lead">法人向けAI活用支援の窓口として、問い合わせから提案、開発、運用支援まで対応します。</p>
+          </div>
+          <div class="overflow-hidden rounded-2xl border border-line bg-white shadow-card">
+            <table class="w-full text-left text-sm">
               <tbody class="divide-y divide-line">
                 <tr><th scope="row" class="w-40 bg-blue-pale px-5 py-4 align-top font-bold text-navy-dark">会社名</th><td class="px-5 py-4 text-ink">あるご合同会社</td></tr>
-                <tr><th scope="row" class="bg-blue-pale px-5 py-4 align-top font-bold text-navy-dark">サービス名</th><td class="px-5 py-4 text-ink">Algo AI</td></tr>
-                <tr><th scope="row" class="bg-blue-pale px-5 py-4 align-top font-bold text-navy-dark">所在地</th><td class="px-5 py-4 text-ink">（準備中）</td></tr>
-                <tr><th scope="row" class="bg-blue-pale px-5 py-4 align-top font-bold text-navy-dark">代表者</th><td class="px-5 py-4 text-ink">（準備中）</td></tr>
-                <tr><th scope="row" class="bg-blue-pale px-5 py-4 align-top font-bold text-navy-dark">事業内容</th><td class="px-5 py-4 text-ink"><ul class="space-y-1"><li>・AI導入コンサルティング</li><li>・AIアプリ・業務システム開発</li><li>・福祉・就労支援向けAI活用支援</li><li>・数学・統計コンサルティング</li></ul></td></tr>
-                <tr><th scope="row" class="bg-blue-pale px-5 py-4 align-top font-bold text-navy-dark">連絡先</th><td class="px-5 py-4 text-ink"><a href="/contact.html" class="prose-link">お問い合わせフォーム</a>よりご連絡ください</td></tr>
+                <tr><th scope="row" class="bg-blue-pale px-5 py-4 align-top font-bold text-navy-dark">サービス名</th><td class="px-5 py-4 text-ink">Algo AI（アルゴAI）</td></tr>
+                <tr><th scope="row" class="bg-blue-pale px-5 py-4 align-top font-bold text-navy-dark">所在地</th><td class="px-5 py-4 text-ink">〒133-0051 東京都江戸川区北小岩5-30-14 カサフェリース101</td></tr>
+                <tr><th scope="row" class="bg-blue-pale px-5 py-4 align-top font-bold text-navy-dark">電話番号</th><td class="px-5 py-4 text-ink">03-5809-2771</td></tr>
+                <tr><th scope="row" class="bg-blue-pale px-5 py-4 align-top font-bold text-navy-dark">営業時間</th><td class="px-5 py-4 text-ink">9:30 - 20:00</td></tr>
+                <tr><th scope="row" class="bg-blue-pale px-5 py-4 align-top font-bold text-navy-dark">古物商許可証番号</th><td class="px-5 py-4 text-ink">431060052580</td></tr>
+                <tr><th scope="row" class="bg-blue-pale px-5 py-4 align-top font-bold text-navy-dark">事業内容</th><td class="px-5 py-4 text-ink"><ul class="space-y-1"><li>AI導入コンサルティング</li><li>AIアプリ・業務システム開発</li><li>福祉・就労支援向けAI活用支援</li><li>数学・統計コンサルティング</li></ul></td></tr>
+                <tr><th scope="row" class="bg-blue-pale px-5 py-4 align-top font-bold text-navy-dark">お問い合わせ</th><td class="px-5 py-4 text-ink"><a href="/contact.html" class="prose-link">お問い合わせフォーム</a>よりご連絡ください</td></tr>
               </tbody>
             </table>
           </div>
-          <p class="mt-4 text-sm text-ink/70">※（準備中）の項目は、正式情報が確定次第掲載します。</p>
         </div>
       </section>
 
-      <!-- 代表（簡易） -->
       <section class="py-14 lg:py-16">
-        <div class="container-base mx-auto max-w-3xl">
-          <h2 class="section-title">代表より</h2>
-          <p class="section-lead">数学・統計・AI開発の知見を、現場で本当に役立つ形に翻訳することが私たちの役割だと考えています。小さく始めて、使える形まで一緒に育てていく——そんな伴走支援をお届けします。</p>
-          <p class="mt-4 text-sm text-ink/70">※代表プロフィールの詳細は、今後あらためて掲載予定です。</p>
+        <div class="container-base mx-auto max-w-3xl text-center">
+          <p class="section-eyebrow section-eyebrow-center">Message</p>
+          <h2 class="section-title">現場で使える形まで、伴走します</h2>
+          <p class="section-lead">AIは導入するだけでは成果につながりません。業務を理解し、使う人が無理なく続けられる形に調整することで、はじめて日々の仕事を支える道具になります。</p>
         </div>
       </section>
 
-      <section class="section-dark py-14 text-center lg:py-16">
+      <section class="bottom-cta-band py-14 text-center lg:py-16">
         <div class="container-base relative z-10">
-          <h2 class="text-2xl font-bold text-white">お気軽にお問い合わせください</h2>
+          <h2 class="text-2xl font-bold text-white">AI活用について、まずはお気軽にご相談ください</h2>
+          <p class="mt-3 text-white/80">初回相談は無料です。オンラインでも全国対応しています。</p>
           <div class="mt-6 flex flex-wrap justify-center gap-3">
             <a href="/contact.html" class="btn-accent" data-cta="company_contact">無料相談する</a>
             <a href="{{ lineUrl }}" class="btn-line" data-line target="_blank" rel="noopener">LINEで相談する</a>

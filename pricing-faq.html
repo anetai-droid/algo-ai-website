@@ -32,20 +32,60 @@
 
       <!-- 料金の目安 -->
       <section class="py-14 lg:py-16">
-        <div class="container-base mx-auto max-w-3xl">
+        <div class="container-base">
           <h2 class="section-title">料金の目安</h2>
           <p class="mt-2 text-sm text-ink/70">※料金は確定前のため、現時点での目安です。内容により変動します。</p>
-          <div class="mt-6">
-            <table class="data-table">
-              <tbody class="divide-y divide-line">
-                <tr class="bg-accent-soft/60"><th scope="row" class="px-5 py-4 font-bold text-navy-dark">初回相談</th><td class="px-5 py-4 font-bold text-accent-deep">無料</td></tr>
-                <tr><th scope="row" class="px-5 py-4 font-medium text-navy-dark">AI導入相談</th><td class="px-5 py-4 text-ink">要相談</td></tr>
-                <tr class="bg-offwhite"><th scope="row" class="px-5 py-4 font-medium text-navy-dark">業務改善支援</th><td class="px-5 py-4 text-ink">要相談</td></tr>
-                <tr><th scope="row" class="px-5 py-4 font-medium text-navy-dark">AIアプリ開発</th><td class="px-5 py-4 text-ink">内容に応じて個別見積もり</td></tr>
-                <tr class="bg-offwhite"><th scope="row" class="px-5 py-4 font-medium text-navy-dark">福祉・就労支援向けAI活用支援</th><td class="px-5 py-4 text-ink">要相談</td></tr>
-                <tr><th scope="row" class="px-5 py-4 font-medium text-navy-dark">数学・統計コンサルティング</th><td class="px-5 py-4 text-ink">要相談</td></tr>
-              </tbody>
-            </table>
+          <div class="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            <div class="card bg-accent-soft/60">
+              <h3 class="font-bold text-navy-dark">初回相談</h3>
+              <p class="mt-4 font-mono text-3xl font-bold text-accent-deep">¥0</p>
+              <p class="mt-2 text-sm text-ink-soft">現状整理、相談内容の切り分け、進め方の確認。</p>
+            </div>
+            <div class="card">
+              <h3 class="font-bold text-navy-dark">AI導入・業務改善</h3>
+              <p class="mt-4 text-lg font-bold text-accent-deep">個別見積もり</p>
+              <p class="mt-2 text-sm text-ink-soft">業務整理、ツール選定、プロンプト設計、研修。</p>
+            </div>
+            <div class="card">
+              <h3 class="font-bold text-navy-dark">AIアプリ開発</h3>
+              <p class="mt-4 text-lg font-bold text-accent-deep">個別見積もり</p>
+              <p class="mt-2 text-sm text-ink-soft">要件整理、試作、Webアプリ、API連携。</p>
+            </div>
+            <div class="card">
+              <h3 class="font-bold text-navy-dark">統計・データ分析</h3>
+              <p class="mt-4 text-lg font-bold text-accent-deep">個別見積もり</p>
+              <p class="mt-2 text-sm text-ink-soft">分析設計、集計、検証、レポート作成。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-offwhite py-14 lg:py-16">
+        <div class="container-base grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
+          <div>
+            <p class="section-eyebrow">Estimate Factors</p>
+            <h2 class="section-title">費用が変わる主な要素</h2>
+            <p class="section-lead">同じAI活用でも、相談だけなのか、研修や開発まで含むのかで必要な工数が変わります。初回相談で範囲を整理します。</p>
+          </div>
+          <div class="grid gap-4 md:grid-cols-2">
+            <div class="rounded-xl border border-line bg-white p-5"><h3 class="font-bold text-navy-dark">支援範囲</h3><p class="mt-2 text-sm text-ink-soft">相談、業務整理、研修、開発、運用支援のどこまで行うか。</p></div>
+            <div class="rounded-xl border border-line bg-white p-5"><h3 class="font-bold text-navy-dark">開発規模</h3><p class="mt-2 text-sm text-ink-soft">試作品、社内ツール、本番アプリ、外部API連携の有無。</p></div>
+            <div class="rounded-xl border border-line bg-white p-5"><h3 class="font-bold text-navy-dark">データ量・複雑さ</h3><p class="mt-2 text-sm text-ink-soft">分析対象、既存データの整理状況、セキュリティ要件。</p></div>
+            <div class="rounded-xl border border-line bg-white p-5"><h3 class="font-bold text-navy-dark">定着支援</h3><p class="mt-2 text-sm text-ink-soft">研修回数、マニュアル作成、運用後の改善サポート。</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-14 lg:py-16">
+        <div class="container-base">
+          <div class="mx-auto max-w-3xl text-center">
+            <p class="section-eyebrow section-eyebrow-center">How To Choose</p>
+            <h2 class="section-title">迷ったときの選び方</h2>
+          </div>
+          <div class="mt-8 grid gap-5 md:grid-cols-3">
+            <div class="card"><h3 class="font-bold text-navy-dark">まず整理したい</h3><p class="mt-2 text-sm text-ink-soft">AI導入相談・業務改善から始めるのが向いています。</p></div>
+            <div class="card"><h3 class="font-bold text-navy-dark">具体的に作りたい</h3><p class="mt-2 text-sm text-ink-soft">AIアプリ・業務システム開発で試作品から進めます。</p></div>
+            <div class="card"><h3 class="font-bold text-navy-dark">福祉現場で使いたい</h3><p class="mt-2 text-sm text-ink-soft">福祉・就労支援向けAI活用支援で現場運用まで設計します。</p></div>
           </div>
         </div>
       </section>

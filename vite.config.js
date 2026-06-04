@@ -47,7 +47,7 @@ const pages = {
   '/company.html': {
     title: '会社概要｜あるご合同会社（Algo AI）',
     description:
-      'Algo AIを運営するあるご合同会社の会社概要。会社名、所在地、事業内容、代表者、企業理念をご紹介します。',
+      'Algo AIを運営するあるご合同会社の会社概要。所在地、事業内容、代表プロフィール、AI・IT開発と数学・統計コンサルティングの実績をご紹介します。',
     path: '/company.html',
   },
   '/contact.html': {
