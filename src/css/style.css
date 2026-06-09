@@ -346,6 +346,73 @@
   .flow-faq-band .faq-icon { color: #ffffff !important; }
   .flow-faq-band .faq[open] { background: rgba(255, 255, 255, 0.08); border-color: #ffffff; box-shadow: none; }
 
+  .pricing-plan-section { @apply py-16 lg:py-20; background: #f5f8fc; background-image: radial-gradient(rgba(31, 99, 166, 0.08) 1px, transparent 1px); background-size: 18px 18px; }
+  .pricing-plan-head { @apply mx-auto max-w-3xl text-center; }
+  .pricing-plan-head p { @apply text-sm font-bold text-navy-dark; }
+  .pricing-plan-head h2 { @apply mt-2 text-3xl font-bold text-accent-bright sm:text-4xl; }
+  .pricing-plan-head span { @apply mt-3 block text-xs text-ink-soft; }
+  .pricing-plan-grid { @apply mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4; }
+  .pricing-plan-card { @apply relative min-h-[230px] bg-white px-6 py-8 text-center shadow-card; border-radius: 4px; }
+  .pricing-plan-card .plan-bar { @apply absolute left-6 right-6 top-0 h-1.5 bg-accent-bright; }
+  .pricing-plan-card h3 { @apply text-base font-bold leading-snug text-accent-deep; }
+  .pricing-plan-card p { @apply mt-6 text-xs font-bold leading-relaxed text-ink-soft; }
+  .pricing-plan-card strong { @apply mt-3 block font-mono text-3xl font-bold text-navy-dark; }
+  .pricing-plan-card strong span { @apply ml-1 text-base; }
+  .pricing-plan-card .plan-rank { @apply absolute -left-3 -top-8 flex h-16 w-16 items-center justify-center rounded-full bg-[#f5c443] text-center text-[11px] font-bold leading-tight text-white shadow-card; }
+  .pricing-plan-card.plan-green .plan-bar { background: #3fcf8e; }
+  .pricing-plan-card.plan-green h3 { color: #2aa873; }
+  .pricing-plan-card.plan-yellow .plan-bar { background: #f5c443; }
+  .pricing-plan-card.plan-yellow h3 { color: #d59c13; }
+  .pricing-wide-card { @apply mx-auto mt-8 grid max-w-5xl items-center gap-7 bg-white px-7 py-8 shadow-card md:grid-cols-[0.32fr_1fr]; border-radius: 4px; }
+  .pricing-wide-card.trial { border-top: 6px solid #ef4f66; }
+  .pricing-wide-card.estimate { border-top: 6px solid #26a7dc; }
+  .pricing-wide-visual { @apply flex min-h-[140px] items-center justify-center; }
+  .pricing-wide-visual img { @apply max-h-[150px] w-auto object-contain; }
+  .pricing-wide-card > div:last-child { @apply text-center md:text-left; }
+  .pricing-wide-card > div:last-child > p:first-child { @apply font-mono text-xs font-bold uppercase tracking-[0.12em]; }
+  .pricing-wide-card.trial > div:last-child > p:first-child { color: #ef4f66; }
+  .pricing-wide-card.estimate > div:last-child > p:first-child { color: #26a7dc; }
+  .pricing-wide-card h3 { @apply mt-1 text-xl font-bold text-navy-dark; }
+  .pricing-wide-card > div:last-child > p:not(:first-child) { @apply mt-3 text-sm leading-relaxed text-ink-soft; }
+  .pricing-wide-card a { @apply mt-5 inline-flex min-h-[46px] items-center justify-center px-8 py-3 text-sm font-bold text-white shadow-card; border-radius: 999px; }
+  .pricing-wide-card.trial a { background: #f5c443; }
+  .pricing-wide-card.estimate a { background: #3fcf8e; }
+
+  .company-profile-section { @apply bg-offwhite py-14 lg:py-16; }
+  .company-logo-card { @apply mt-8 flex items-center gap-4 rounded-2xl border border-line bg-white p-5 shadow-card; }
+  .company-logo-card img { @apply h-16 w-16 shrink-0 object-contain; }
+  .company-logo-card p { @apply text-xl font-bold text-navy-dark; }
+  .company-logo-card span { @apply mt-1 block font-mono text-xs font-bold uppercase tracking-[0.16em] text-ink-soft; }
+  .company-map-card { @apply overflow-hidden rounded-2xl border border-line bg-white shadow-card; }
+  .company-map-card iframe { @apply h-[260px] w-full border-0; }
+  .company-map-card div { @apply border-t border-line px-5 py-4; }
+  .company-map-card p { @apply text-sm font-bold text-navy-dark; }
+  .company-map-card span { @apply mt-1 block text-sm leading-relaxed text-ink-soft; }
+
+  .company-representative { @apply bg-offwhite py-16 lg:py-20; }
+  .company-rep-hero { @apply grid overflow-hidden bg-white shadow-card lg:grid-cols-[0.95fr_1.05fr]; border-radius: 4px; }
+  .company-rep-copy { @apply flex flex-col justify-center p-8 lg:p-10; }
+  .company-rep-copy h2 { @apply text-3xl font-bold leading-tight text-navy-dark sm:text-4xl; }
+  .company-rep-copy > p:not(.section-eyebrow) { @apply mt-5 text-sm leading-relaxed text-ink-soft sm:text-base; }
+  .company-rep-points { @apply mt-7 flex flex-wrap gap-2; }
+  .company-rep-points span { @apply inline-flex bg-accent-soft px-3 py-2 text-xs font-bold text-accent-deep; border-radius: 2px; }
+  .company-rep-visual { @apply min-h-[280px] bg-navy-dark; }
+  .company-rep-visual img { @apply h-full min-h-[280px] w-full object-cover; }
+  .company-track-head { @apply mx-auto mt-14 max-w-3xl text-center; }
+  .company-track-head h2 { @apply text-2xl font-bold leading-tight text-navy-dark sm:text-3xl; }
+  .company-track-head p:not(.section-eyebrow) { @apply mt-4 text-sm leading-relaxed text-ink-soft sm:text-base; }
+  .company-track-grid { @apply mt-9 grid gap-5 md:grid-cols-3; }
+  .company-track-card { @apply overflow-hidden bg-white shadow-card; border-radius: 4px; }
+  .company-track-card img { @apply h-44 w-full object-cover; }
+  .company-track-card div { @apply p-6; }
+  .company-track-card span { @apply font-mono text-[11px] font-bold uppercase tracking-[0.12em] text-accent-deep; }
+  .company-track-card h3 { @apply mt-2 text-xl font-bold text-navy-dark; }
+  .company-track-card p { @apply mt-3 text-sm leading-relaxed text-ink-soft; }
+  .company-track-card.accent { @apply flex min-h-[296px] items-end text-white; background: linear-gradient(135deg, rgba(31, 99, 166, 0.96), rgba(53, 154, 210, 0.92)), url("../images/company-profile-light.png") center/cover; }
+  .company-track-card.accent span,
+  .company-track-card.accent h3 { color: #ffffff; }
+  .company-track-card.accent p { color: rgba(255, 255, 255, 0.84); }
+
   .field { @apply mt-2 w-full rounded-lg border bg-white px-4 py-3 text-base transition-colors; border-color: var(--color-line); }
   .field:focus { border-color: var(--color-accent); outline: none; box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-accent) 18%, transparent); }
 }
