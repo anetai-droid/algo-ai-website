@@ -3,6 +3,9 @@
 あるご合同会社が提供するAI活用支援サービス「Algo AI」の公式Webサイト。
 HTML / JavaScript / Tailwind CSS による静的サイト（Vite ビルド）。
 
+- **GitHub リポジトリ**: https://github.com/anetai-droid/algo-ai-website
+- 公開設定・依頼主への確認事項は [`LAUNCH_CHECKLIST.md`](./LAUNCH_CHECKLIST.md) を参照
+
 ## 技術構成
 
 - HTML5 + [Tailwind CSS v4](https://tailwindcss.com/) + Vanilla JS
