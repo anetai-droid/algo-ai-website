@@ -17,7 +17,7 @@
           <p class="mt-2 text-sm text-ink/70">自動返信メールが届かない場合は、メールアドレスの入力誤りや迷惑メールフォルダをご確認ください。</p>
           <div class="mt-8 flex flex-wrap justify-center gap-3">
             <a href="/" class="btn-primary" data-cta="thanks_home">トップへ戻る</a>
-            <a href="{{ lineUrl }}" class="btn-line" data-line target="_blank" rel="noopener">LINEで相談する</a>
+            {{#if hasLine}}<a href="{{ lineUrl }}" class="btn-line" data-line target="_blank" rel="noopener">LINEで相談する</a>{{/if}}
           </div>
         </div>
       </section>

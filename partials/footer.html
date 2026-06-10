@@ -5,7 +5,7 @@
 >
   <div class="container-base flex gap-3">
     <a href="/contact.html" class="btn-primary flex-1 px-3 py-3 text-sm" data-cta="floating_contact">無料相談する</a>
-    <a href="{{ lineUrl }}" class="btn-line flex-1 px-3 py-3 text-sm" data-line target="_blank" rel="noopener">LINE相談</a>
+    {{#if hasLine}}<a href="{{ lineUrl }}" class="btn-line flex-1 px-3 py-3 text-sm" data-line target="_blank" rel="noopener">LINE相談</a>{{/if}}
   </div>
 </div>
 
@@ -27,7 +27,7 @@
       </p>
       <div class="mt-6 flex flex-wrap gap-3">
         <a href="/contact.html" class="btn-accent px-5 py-2.5 text-sm" data-cta="footer_contact">無料相談する</a>
-        <a href="{{ lineUrl }}" class="btn-line px-5 py-2.5 text-sm" data-line target="_blank" rel="noopener">LINEで相談する</a>
+        {{#if hasLine}}<a href="{{ lineUrl }}" class="btn-line px-5 py-2.5 text-sm" data-line target="_blank" rel="noopener">LINEで相談する</a>{{/if}}
       </div>
     </div>
 
@@ -39,6 +39,8 @@
         <li><a href="/services.html#development" class="transition-colors hover:text-accent-bright">AIアプリ・業務システム開発</a></li>
         <li><a href="/welfare-ai.html" class="transition-colors hover:text-accent-bright">福祉・就労支援向けAI活用支援</a></li>
         <li><a href="/services.html#statistics" class="transition-colors hover:text-accent-bright">数学・統計コンサルティング</a></li>
+        <li><a href="/co-creation.html" class="transition-colors hover:text-accent-bright">就労支援との協働モデル</a></li>
+        <li><a href="/works.html" class="transition-colors hover:text-accent-bright">開発実績・プロジェクト例</a></li>
       </ul>
     </nav>
 
@@ -46,6 +48,7 @@
     <nav aria-label="サイト情報">
       <h2 class="text-sm font-bold text-white">サイト情報</h2>
       <ul class="mt-4 space-y-2 text-sm text-white/70">
+        <li><a href="/column.html" class="transition-colors hover:text-accent-bright">コラム・知識</a></li>
         <li><a href="/flow.html" class="transition-colors hover:text-accent-bright">ご利用の流れ</a></li>
         <li><a href="/pricing-faq.html" class="transition-colors hover:text-accent-bright">料金・FAQ</a></li>
         <li><a href="/company.html" class="transition-colors hover:text-accent-bright">会社概要</a></li>

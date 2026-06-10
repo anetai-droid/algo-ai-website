@@ -73,6 +73,17 @@ function initTracking() {
   )
 }
 
+function initLineLinks() {
+  // LINE公式アカウントURLが未設定（lineUrl が空 → "#"）のときは
+  // 壊れた導線を表示しない。URLが入れば自動的に表示される。
+  document.querySelectorAll('[data-line]').forEach((el) => {
+    const href = el.getAttribute('href')
+    if (!href || href === '#') {
+      el.style.display = 'none'
+    }
+  })
+}
+
 function initContactForm() {
   const form = document.querySelector('[data-contact-form]')
   if (!form) return
@@ -140,6 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initFaq()
   initFloatingCta()
   initTracking()
+  initLineLinks()
   initContactForm()
   initActiveNav()
   initReveal()

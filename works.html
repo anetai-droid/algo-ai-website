@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    {{> head-meta }}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Algo AI 開発実績・プロジェクト例",
+      "itemListElement": [
+        {"@type":"CreativeWork","position":1,"name":"野菜の出荷数予測アプリ","description":"ベイズ統計モデリングで野菜の出荷数を予測。気象・過去実績などの不確実性を確率として扱い、仕入れ・在庫計画の最適化を支援。"},
+        {"@type":"CreativeWork","position":2,"name":"競馬データ解析・予測ソフトウェア","description":"過去レースデータ・血統・馬場状態・騎手成績などの多変量を独自アルゴリズムで高速解析し、確率モデルで結果を予測するデータ解析プロジェクト。"},
+        {"@type":"CreativeWork","position":3,"name":"言語習得アプリ（ネパール語）","description":"語彙・例文を生成AIで生成。理解度や誤答傾向を分析し、最適な復習タイミングと難易度を動的に提示する学習最適化アプリ。"},
+        {"@type":"CreativeWork","position":4,"name":"AI経理・自動仕訳最適化ソフト","description":"領収書・請求書・入出金明細を自動読込し、勘定科目をAIが推論・提案。経理業務の属人化を防ぎ省力化するバックオフィス支援ソフト。"},
+        {"@type":"CreativeWork","position":5,"name":"数学問題集 自動生成アプリ","description":"分野・難易度・数理概念を指定すると、重複のないオリジナル問題と解答解説を自動生成する教育機関・学習塾向けシステム。"},
+        {"@type":"CreativeWork","position":6,"name":"ホームページ脆弱性 自動診断アプリ","description":"Webサイト・Webアプリの脆弱性を多角的シミュレーションで自動検知し、リスクレベルと修正推奨をレポート化するセキュリティ診断ツール。"},
+        {"@type":"CreativeWork","position":7,"name":"学会論文チェック・推敲アシストソフト","description":"表記揺れ・引用形式・論理構造・剽窃リスクをテキスト解析で自動検証。査読前チェックの労力を軽減し品質を標準化。"},
+        {"@type":"CreativeWork","position":8,"name":"ホームページ制作（多数）","description":"コーポレートサイト・LP・サービス特化型サイトを多数制作。要件定義からデザイン・コンテンツ・公開・保守まで一貫対応。"}
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    {{> header }}
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container-base relative z-10">
+          <p class="section-eyebrow">Projects</p>
+          <h1 class="section-title text-3xl sm:text-4xl lg:text-5xl">開発実績・プロジェクト例</h1>
+          <p class="section-lead max-w-2xl">業種を問わず、「現場の課題」を起点にAIアプリ・ソフトを開発してきました。数学・統計に裏打ちされた、代表的なプロジェクト例をご紹介します。</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="/contact.html" class="btn-primary" data-cta="works_hero_contact">開発を相談する</a>
+            <a href="/services.html" class="btn-outline">サービスを見る</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 実績数値（一次資料記載） -->
+      <section class="stats-band">
+        <div class="container-base grid gap-8 text-center sm:grid-cols-3">
+          <div data-reveal><p class="stat-num">36<span class="text-2xl align-top">年</span></p><p class="stat-label">AI開発・研究開発歴<br />第二次AIブームから</p></div>
+          <div data-reveal data-reveal-delay="1"><p class="stat-num">30<span class="text-2xl align-top">社+</span></p><p class="stat-label">大手〜中小<br />開発実績</p></div>
+          <div data-reveal data-reveal-delay="2"><p class="stat-num">12<span class="text-2xl align-top">年+</span></p><p class="stat-label">数学・統計<br />教員歴</p></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container-base">
+          <div class="mx-auto max-w-3xl text-center" data-reveal>
+            <p class="section-eyebrow section-eyebrow-center">Project Examples</p>
+            <h2 class="section-title">代表的な開発実績</h2>
+            <p class="section-lead">需要予測から学習アプリ、AI経理、セキュリティ診断、Web制作まで。新規のご相談・受託開発を承っています。</p>
+            <p class="mt-4 text-sm text-ink-soft">※ 守秘のため、顧客名・具体的な成果数値は記載していません。確認可能な範囲での開発実績・プロジェクト例として掲載しています。</p>
+          </div>
+
+          <div class="works-grid" data-reveal>
+            <article class="work-card">
+              <span class="work-cat">Statistics ∕ ベイズ予測</span>
+              <h3>野菜の出荷数 予測アプリ</h3>
+              <span class="work-tech">ベイズ統計 × 需要予測</span>
+              <p>天候・過去の市場流通量・生産地固有の周期要因を統合し、出荷数を予測。新たなデータが得られるたびにベイズ的更新で精度を最適化し、廃棄ロス削減と価格安定化を支援します。</p>
+            </article>
+            <article class="work-card">
+              <span class="work-cat">Data ∕ 予測モデル</span>
+              <h3>競馬データ解析・予測ソフト</h3>
+              <span class="work-tech">データ分析 × 確率モデル</span>
+              <p>過去レースデータ・血統・馬場状態・騎手成績などの多変量を、独自開発の予測アルゴリズムで高速処理・解析。データに基づく客観的なインサイトを導くプロジェクトです。</p>
+            </article>
+            <article class="work-card">
+              <span class="work-cat">App ∕ 言語学習</span>
+              <h3>言語習得アプリ（ネパール語）</h3>
+              <span class="work-tech">学習アプリ × 生成AI</span>
+              <p>語彙・例文を生成AIで作成し、反復学習を効率化。理解度や誤答傾向を分析し、最適な復習タイミングと難易度の問題を動的に提示する学習最適化を搭載しています。</p>
+            </article>
+            <article class="work-card">
+              <span class="work-cat">AI ∕ 経理</span>
+              <h3>AI経理・自動仕訳ソフト</h3>
+              <span class="work-tech">業務自動化 × 生成AI</span>
+              <p>領収書・請求書・入出金明細を自動で読み込み、適切な勘定科目をAIが推論・提案。Excelベースの複雑なワークフローを高度な計算エンジンへ統合し、経理業務を省力化します。</p>
+            </article>
+            <article class="work-card">
+              <span class="work-cat">Edu ∕ 自動生成</span>
+              <h3>数学問題集 自動生成アプリ</h3>
+              <span class="work-tech">教材作成 × アルゴリズム</span>
+              <p>分野・難易度・数理概念を指定すると、重複のないオリジナル問題と解答解説を自動生成。数式生成アルゴリズムにより、無限に近いパターンの問題セットを供給できます。</p>
+            </article>
+            <article class="work-card">
+              <span class="work-cat">Security ∕ 診断</span>
+              <h3>HP脆弱性 自動診断アプリ</h3>
+              <span class="work-tech">Webセキュリティ</span>
+              <p>Webサイト・Webアプリに潜む脆弱性を、多角的なシミュレーションで自動検知・診断。リスクレベルと具体的な修正推奨方法をレポート化し、Web資産を脅威から守ります。</p>
+            </article>
+            <article class="work-card">
+              <span class="work-cat">Analysis ∕ 校閲</span>
+              <h3>学会論文 チェックソフト</h3>
+              <span class="work-tech">テキストマイニング × 構文解析</span>
+              <p>表記の揺れ・引用形式の不整合・論理構造の破綻・剽窃リスクを、テキスト解析技術で自動検証。査読前チェックの労力を軽減し、論文の品質と信頼性を高めます。</p>
+            </article>
+            <article class="work-card">
+              <span class="work-cat">Web ∕ 制作</span>
+              <h3>ホームページ制作（多数）</h3>
+              <span class="work-tech">企業・サービスサイト</span>
+              <p>コーポレートサイト・LP・サービス特化型サイトを多数制作。要件定義からデザイン・コンテンツ・公開・保守運用まで一貫対応し、継続的な改善も得意としています。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="bottom-cta-band py-14 text-center lg:py-16">
+        <div class="container-base relative z-10" data-reveal>
+          <h2 class="text-2xl font-bold text-white">こんなものは作れる？という段階から相談できます</h2>
+          <p class="mt-3 text-white/80">現場の課題を起点に、最適な形をご提案します。初回相談は無料です。</p>
+          <div class="mt-6 flex flex-wrap justify-center gap-3">
+            <a href="/contact.html" class="btn-accent" data-cta="works_contact">無料相談する</a>
+            {{#if hasLine}}<a href="{{ lineUrl }}" class="btn-line" data-line target="_blank" rel="noopener">LINEで相談する</a>{{/if}}
+          </div>
+        </div>
+      </section>
+    </main>
+
+    {{> footer }}
+  </body>
+</html>

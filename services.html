@@ -63,6 +63,7 @@
                 <li>ChatGPTなどの社内活用ルール設計</li>
                 <li>研修資料・業務別プロンプトの整備</li>
               </ul>
+              <p class="mt-5 text-xs font-bold text-ink-soft">対象：中小企業・法人全般　／　進め方：現状業務の分析 → AI活用領域の特定 → ツール選定・導入支援 → 定着サポートまで一貫対応</p>
             </div>
           </article>
 
@@ -95,8 +96,9 @@
               <ul>
                 <li>AIチャットボット・社内向けAIツール</li>
                 <li>業務支援Webアプリ・管理画面</li>
-                <li>データ集計・可視化・API連携</li>
+                <li>データ集計・可視化・API連携・データ分析システム</li>
               </ul>
+              <p class="mt-5 text-xs font-bold text-ink-soft">対象：中小企業・スタートアップ　／　進め方：要件定義後の固定費用型見積もり。試作品から着手し、実業務で触りながら改善</p>
             </div>
           </article>
 
@@ -110,7 +112,8 @@
             <div>
               <span class="inline-flex items-center rounded-lg bg-white/15 px-3 py-1 font-mono text-sm font-bold text-accent-bright">03</span>
               <h2 class="mt-2 text-2xl font-bold text-white sm:text-3xl">福祉・就労支援向けAI活用支援</h2>
-              <p class="mt-4 text-white/75">支援員の負担軽減と、利用者の作業機会拡大を両立するためのAI活用を設計します。</p>
+              <p class="mt-4 text-white/75">支援員の負担軽減と、利用者の作業機会拡大を両立するためのAI活用を設計します。ツールの選定・導入・研修に加え、補助金活用の情報提供も行います。</p>
+              <p class="mt-3 text-xs font-bold text-accent-bright">対象：福祉法人・NPO・就労支援事業者</p>
               <a href="/welfare-ai.html" class="btn-accent mt-6" data-service-detail="welfare">専用ページを見る</a>
             </div>
             <div class="grid gap-5 md:grid-cols-2">
@@ -118,6 +121,7 @@
               <div class="glass-card"><h3 class="font-bold text-white">作業設計</h3><p class="mt-2 text-sm text-white/70">AIを使った文章・画像・データ整理などの作業を設計します。</p></div>
               <div class="glass-card"><h3 class="font-bold text-white">支援員研修</h3><p class="mt-2 text-sm text-white/70">現場で無理なく使える操作とルールを共有します。</p></div>
               <div class="glass-card"><h3 class="font-bold text-white">定着支援</h3><p class="mt-2 text-sm text-white/70">導入して終わりにせず、運用しながら改善します。</p></div>
+              <div class="glass-card"><h3 class="font-bold text-white">補助金活用の情報提供</h3><p class="mt-2 text-sm text-white/70">導入を後押しする補助金・助成金の情報提供を行います（最新の公募要領は要確認）。</p></div>
             </div>
           </div>
         </div>
@@ -129,12 +133,14 @@
             <div>
               <span class="inline-flex items-center rounded-lg bg-accent-soft px-3 py-1 font-mono text-sm font-bold text-accent-deep">04</span>
               <h2 class="section-title mt-2">数学・統計コンサルティング</h2>
-              <p class="section-lead">データ解析、統計モデル、数理的な検証を、事業や研究で使える形に整理します。</p>
+              <p class="section-lead">データ解析、統計モデル構築、機械学習モデル設計、数理的な検証を、事業や研究で使える形に整理します。ビジネスデータ分析だけでなく、研究支援にも対応します。</p>
+              <p class="mt-3 text-xs font-bold text-ink-soft">対象：データ分析が必要な事業者・研究者　／　料金：時間単価制または成果物単位の見積もり</p>
             </div>
-            <div class="grid gap-5 md:grid-cols-3">
+            <div class="grid gap-5 md:grid-cols-2">
               <div class="card"><h3 class="font-bold text-navy-dark">統計解析</h3><p class="mt-2 text-sm text-ink">集計、検定、回帰分析、効果検証</p></div>
               <div class="card"><h3 class="font-bold text-navy-dark">可視化・報告</h3><p class="mt-2 text-sm text-ink">意思決定に使えるレポートやグラフ化</p></div>
               <div class="card"><h3 class="font-bold text-navy-dark">数理モデル</h3><p class="mt-2 text-sm text-ink">アルゴリズム設計、シミュレーション、モデル検証</p></div>
+              <div class="card"><h3 class="font-bold text-navy-dark">機械学習モデル設計</h3><p class="mt-2 text-sm text-ink">予測・分類モデルの設計、データに基づく意思決定支援</p></div>
             </div>
           </div>
         </div>
@@ -146,7 +152,7 @@
           <p class="mt-3 text-white/80">現状を伺って、必要な支援だけをご提案します。初回相談は無料です。</p>
           <div class="mt-6 flex flex-wrap justify-center gap-3">
             <a href="/contact.html" class="btn-accent" data-cta="services_contact">無料相談する</a>
-            <a href="{{ lineUrl }}" class="btn-line" data-line target="_blank" rel="noopener">LINEで相談する</a>
+            {{#if hasLine}}<a href="{{ lineUrl }}" class="btn-line" data-line target="_blank" rel="noopener">LINEで相談する</a>{{/if}}
           </div>
         </div>
       </section>

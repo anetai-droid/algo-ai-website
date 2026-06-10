@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    {{> head-meta }}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "ChatGPTを業務に使う方法：中小企業の実践ガイド",
+      "datePublished": "2026-06-10",
+      "author": {"@id": "{{ siteUrl }}/#organization"},
+      "publisher": {"@id": "{{ siteUrl }}/#organization"},
+      "mainEntityOfPage": "{{ page.canonical }}"
+    }
+    </script>
+  </head>
+  <body>
+    {{> header }}
+
+    <main id="main">
+      <section class="border-b border-line bg-offwhite py-12 lg:py-16">
+        <div class="container-base mx-auto max-w-3xl">
+          <nav class="mb-4 text-xs text-ink-soft" aria-label="パンくず"><a href="/column.html" class="prose-link">コラム</a> ／ AI活用基礎</nav>
+          <div class="article-meta"><span class="col-tag">AI活用基礎</span><time datetime="2026-06-10">2026/06/10</time></div>
+          <h1 class="mt-4 text-2xl font-bold leading-tight text-navy-dark sm:text-3xl lg:text-4xl">ChatGPTを業務に使う方法：中小企業の実践ガイド</h1>
+          <p class="section-lead">ChatGPTを「なんとなく触ってみた」で止めず、業務で安全かつ実用的に使うための基本ステップと注意点を、中小企業向けにわかりやすく整理しました。</p>
+        </div>
+      </section>
+
+      <section class="py-12 lg:py-16">
+        <div class="container-base">
+          <div class="article-prose">
+            <p>ChatGPTのような生成AIは、使い方次第で日々の業務を大きく助けてくれます。一方で、なんとなく使うだけでは「便利そうだけど定着しない」状態になりがちです。実務で役立てるための進め方を見ていきましょう。</p>
+
+            <h2>どんな業務に向いているか</h2>
+            <p>生成AIは、ゼロから何かを生み出すよりも、下書き・整理・言い換えといった作業を補助するのが得意です。たとえば次のような業務と相性が良いといえます。</p>
+            <ul>
+              <li>メール・案内文・議事録などの下書き作成</li>
+              <li>長い文章の要約や、箇条書きへの整理</li>
+              <li>文章の言い換え・トーンの調整・誤字脱字の確認</li>
+              <li>アイデア出しや、たたき台づくり</li>
+            </ul>
+
+            <h2>実用的に使う3つのステップ</h2>
+            <h3>① 役割と背景を伝える</h3>
+            <p>「あなたは〇〇の担当者です」「以下の条件で」と、立場・目的・前提を最初に伝えると、出力の精度が上がります。</p>
+            <h3>② 具体的に依頼する</h3>
+            <p>「短く」「丁寧な敬語で」「3案出して」など、求める形を具体的に指定します。一度で完璧を狙わず、結果を見て調整するのがコツです。</p>
+            <h3>③ 人が確認して仕上げる</h3>
+            <p>生成された文章は、事実関係や固有名詞を必ず人が確認します。AIは事実と異なる内容を自信ありげに出力することがあるためです。</p>
+
+            <h2>注意しておきたいこと</h2>
+            <ul>
+              <li>顧客情報・個人情報・機密情報の入力可否は、利用するサービスの仕様や契約を確認する</li>
+              <li>出力をそのまま正解として扱わず、最終判断は人が行う</li>
+              <li>社内で「使ってよい場面・入力してよい情報」のルールを共有する</li>
+            </ul>
+
+            <h3>まとめ</h3>
+            <p>ChatGPTは、役割・指示・確認の3点を押さえることで、安全に業務へ取り入れられます。Algo AIでは、業務別のプロンプト整備や社内ルール設計、研修まで支援しています。</p>
+          </div>
+
+          <div class="mx-auto mt-12 max-w-3xl rounded-2xl border border-line bg-blue-pale p-6 text-center">
+            <h2 class="text-lg font-bold text-navy-dark">社内でのChatGPT活用を相談する</h2>
+            <p class="mt-2 text-sm text-ink">業務別の使い方やルールづくりから、研修までお手伝いします。初回相談は無料です。</p>
+            <a href="/contact.html" class="btn-primary mt-4" data-cta="article_chatgpt_cta">無料相談する</a>
+          </div>
+          <p class="mt-8 text-center"><a href="/column.html" class="prose-link">← コラム一覧へ戻る</a></p>
+        </div>
+      </section>
+    </main>
+
+    {{> footer }}
+  </body>
+</html>

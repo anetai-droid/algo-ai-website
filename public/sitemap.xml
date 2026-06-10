@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://algo-ai.jp/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://algo-ai.jp/services.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://algo-ai.jp/welfare-ai.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://algo-ai.jp/flow.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://algo-ai.jp/pricing-faq.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://algo-ai.jp/company.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://algo-ai.jp/contact.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://algo-ai.jp/privacy.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://algo-ai.jp/</loc><lastmod>2026-06-10</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://algo-ai.jp/services.html</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://algo-ai.jp/co-creation.html</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://algo-ai.jp/works.html</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://algo-ai.jp/welfare-ai.html</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://algo-ai.jp/column.html</loc><lastmod>2026-06-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://algo-ai.jp/flow.html</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://algo-ai.jp/pricing-faq.html</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://algo-ai.jp/contact.html</loc><lastmod>2026-06-10</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://algo-ai.jp/company.html</loc><lastmod>2026-06-10</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://algo-ai.jp/col-ai-start.html</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://algo-ai.jp/col-chatgpt-guide.html</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://algo-ai.jp/col-welfare-ai.html</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://algo-ai.jp/col-app-cost.html</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://algo-ai.jp/col-data-outsource.html</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://algo-ai.jp/col-subsidy.html</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://algo-ai.jp/privacy.html</loc><lastmod>2026-06-10</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>

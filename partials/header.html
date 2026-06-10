@@ -17,11 +17,12 @@
     </a>
 
     <!-- PCナビ -->
-    <nav class="hidden items-center gap-1 lg:flex" aria-label="グローバルナビゲーション">
+    <nav class="hidden items-center gap-0.5 lg:flex" aria-label="グローバルナビゲーション">
       <a href="/" class="nav-link" data-nav-path="/">ホーム</a>
       <a href="/services.html" class="nav-link" data-nav-path="/services.html">サービス</a>
-      <a href="/welfare-ai.html" class="nav-link" data-nav-path="/welfare-ai.html">福祉・就労支援</a>
-      <a href="/flow.html" class="nav-link" data-nav-path="/flow.html">ご利用の流れ</a>
+      <a href="/co-creation.html" class="nav-link" data-nav-path="/co-creation.html">協働モデル</a>
+      <a href="/works.html" class="nav-link" data-nav-path="/works.html">開発実績</a>
+      <a href="/column.html" class="nav-link" data-nav-path="/column.html">コラム</a>
       <a href="/pricing-faq.html" class="nav-link" data-nav-path="/pricing-faq.html">料金・FAQ</a>
       <a href="/company.html" class="nav-link" data-nav-path="/company.html">会社概要</a>
       <a href="/contact.html" class="btn-primary ml-2 min-h-0 px-5 py-2.5 text-sm" data-cta="header_contact">無料相談</a>
@@ -49,11 +50,14 @@
     <nav class="container-base flex flex-col gap-1 py-4" aria-label="モバイルナビゲーション">
       <a href="/" class="rounded-md px-3 py-3 text-base font-medium text-ink hover:bg-blue-pale" data-nav-path="/">ホーム</a>
       <a href="/services.html" class="rounded-md px-3 py-3 text-base font-medium text-ink hover:bg-blue-pale" data-nav-path="/services.html">サービス</a>
+      <a href="/co-creation.html" class="rounded-md px-3 py-3 text-base font-medium text-ink hover:bg-blue-pale" data-nav-path="/co-creation.html">就労支援との協働</a>
+      <a href="/works.html" class="rounded-md px-3 py-3 text-base font-medium text-ink hover:bg-blue-pale" data-nav-path="/works.html">開発実績</a>
+      <a href="/column.html" class="rounded-md px-3 py-3 text-base font-medium text-ink hover:bg-blue-pale" data-nav-path="/column.html">コラム・知識</a>
       <a href="/welfare-ai.html" class="rounded-md px-3 py-3 text-base font-medium text-ink hover:bg-blue-pale" data-nav-path="/welfare-ai.html">福祉・就労支援</a>
       <a href="/flow.html" class="rounded-md px-3 py-3 text-base font-medium text-ink hover:bg-blue-pale" data-nav-path="/flow.html">ご利用の流れ</a>
       <a href="/pricing-faq.html" class="rounded-md px-3 py-3 text-base font-medium text-ink hover:bg-blue-pale" data-nav-path="/pricing-faq.html">料金・FAQ</a>
       <a href="/company.html" class="rounded-md px-3 py-3 text-base font-medium text-ink hover:bg-blue-pale" data-nav-path="/company.html">会社概要</a>
       <a href="/contact.html" class="btn-primary mt-2 w-full" data-cta="mobile_contact">無料相談する</a>
-      <a href="{{ lineUrl }}" class="btn-line mt-1 w-full" data-line target="_blank" rel="noopener">LINEで相談する</a>
+      {{#if hasLine}}<a href="{{ lineUrl }}" class="btn-line mt-1 w-full" data-line target="_blank" rel="noopener">LINEで相談する</a>{{/if}}
     </nav>
   </div>

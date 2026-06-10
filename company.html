@@ -2,26 +2,8 @@
 <html lang="ja">
   <head>
     {{> head-meta }}
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "あるご合同会社",
-      "alternateName": "Algo AI",
-      "url": "{{ siteUrl }}",
-      "areaServed": "JP",
-      "address": {
-        "@type": "PostalAddress",
-        "postalCode": "133-0051",
-        "streetAddress": "北小岩5-30-14 カサフェリース101",
-        "addressLocality": "江戸川区",
-        "addressRegion": "東京都",
-        "addressCountry": "JP"
-      },
-      "telephone": "03-5809-2771",
-      "knowsAbout": ["AI導入支援", "AIアプリ開発", "数学", "統計", "業務改善", "福祉・就労支援"]
-    }
-    </script>
+    {{!-- Organization 構造化データは partials/head-meta.html に集約（全ページ共通）。
+         会社住所・電話は資料間で不一致のため、登記・名刺で確定後に共通側へ追記する。 --}}
   </head>
   <body>
     {{> header }}
@@ -82,7 +64,7 @@
               </div>
             </div>
             <div class="company-rep-visual">
-              <img src="/images/company-education.png" alt="黒板を使って講義を行う代表者のイメージ" />
+              <img src="/images/company-education.webp" alt="黒板を使って講義を行う代表者のイメージ" />
             </div>
           </div>
 
@@ -94,7 +76,7 @@
 
           <div class="company-track-grid">
             <article class="company-track-card">
-              <img src="/images/company-network.png" alt="AI・研究開発の実績イメージ" />
+              <img src="/images/company-network.webp" alt="AI・研究開発の実績イメージ" />
               <div>
                 <span>Research & AI</span>
                 <h3>AI・研究開発</h3>
@@ -102,7 +84,7 @@
               </div>
             </article>
             <article class="company-track-card">
-              <img src="/images/company-finance.png" alt="金融・業務システム開発の実績イメージ" />
+              <img src="/images/company-finance.webp" alt="金融・業務システム開発の実績イメージ" />
               <div>
                 <span>Business System</span>
                 <h3>金融・業務システム</h3>
@@ -110,7 +92,7 @@
               </div>
             </article>
             <article class="company-track-card">
-              <img src="/images/company-representative.png" alt="会議形式で行う教育・研修の実績イメージ" />
+              <img src="/images/company-representative.webp" alt="会議形式で行う教育・研修の実績イメージ" />
               <div>
                 <span>Education</span>
                 <h3>教育・研修</h3>
@@ -128,7 +110,7 @@
             <h2 class="section-title">運営会社</h2>
             <p class="section-lead">法人向けAI活用支援の窓口として、問い合わせから提案、開発、運用支援まで対応します。</p>
             <div class="company-logo-card">
-              <img src="/images/company-logo.png" alt="あるご合同会社 Algo AI ロゴ" />
+              <img src="/images/company-logo.webp" alt="あるご合同会社 Algo AI ロゴ" />
               <div>
                 <p>Algo AI</p>
                 <span>AI Implementation Partner</span>
@@ -175,7 +157,7 @@
           <p class="mt-3 text-white/80">初回相談は無料です。オンラインでも全国対応しています。</p>
           <div class="mt-6 flex flex-wrap justify-center gap-3">
             <a href="/contact.html" class="btn-accent" data-cta="company_contact">無料相談する</a>
-            <a href="{{ lineUrl }}" class="btn-line" data-line target="_blank" rel="noopener">LINEで相談する</a>
+            {{#if hasLine}}<a href="{{ lineUrl }}" class="btn-line" data-line target="_blank" rel="noopener">LINEで相談する</a>{{/if}}
           </div>
         </div>
       </section>

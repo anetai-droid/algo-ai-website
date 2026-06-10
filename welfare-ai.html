@@ -26,7 +26,7 @@
           <p class="section-lead">AIは人の仕事を奪うものではなく、人の強みを活かすための道具です。Algo AIは、就労支援事業所・福祉法人の現場に寄り添い、支援員の負担を減らしながら、利用者の新しい仕事づくりを支援します。</p>
           <div class="mt-8 flex flex-wrap gap-3">
             <a href="/contact.html" class="btn-accent" data-cta="welfare_hero_contact">無料相談する</a>
-            <a href="{{ lineUrl }}" class="btn-line" data-line target="_blank" rel="noopener">LINEで相談する</a>
+            {{#if hasLine}}<a href="{{ lineUrl }}" class="btn-line" data-line target="_blank" rel="noopener">LINEで相談する</a>{{/if}}
           </div>
         </div>
       </section>
@@ -40,7 +40,7 @@
           <div class="welfare-concern-body">
             <div class="welfare-bubble bubble-left-top">支援記録や報告書の作成に<br />時間がかかる</div>
             <div class="welfare-bubble bubble-left-bottom">AIを使いたいが、<br />現場での使い方が分からない</div>
-            <img src="/images/welfare-worry.png" alt="AI活用に悩む担当者のイラスト" class="welfare-worry-img" />
+            <img src="/images/welfare-worry.webp" alt="AI活用に悩む担当者のイラスト" class="welfare-worry-img" />
             <div class="welfare-bubble bubble-right-top">利用者に合った作業を<br />増やしたい</div>
             <div class="welfare-bubble bubble-right-bottom">支援員が使いこなせるか<br />不安がある</div>
           </div>
@@ -57,7 +57,7 @@
 
           <div class="welfare-menu-grid">
             <article class="welfare-menu-card">
-              <div class="welfare-menu-image"><img src="/images/welfare-ai-brain.png" alt="AI導入支援のイラスト" /></div>
+              <div class="welfare-menu-image"><img src="/images/welfare-ai-brain.webp" alt="AI導入支援のイラスト" /></div>
               <div class="welfare-menu-copy">
                 <span>Service 01</span>
                 <h3>AI導入・業務整理</h3>
@@ -67,7 +67,7 @@
             </article>
 
             <article class="welfare-menu-card">
-              <div class="welfare-menu-image"><img src="/images/welfare-chat.png" alt="AIチャット活用支援のイラスト" /></div>
+              <div class="welfare-menu-image"><img src="/images/welfare-chat.webp" alt="AIチャット活用支援のイラスト" /></div>
               <div class="welfare-menu-copy">
                 <span>Service 02</span>
                 <h3>支援員向けAI活用研修</h3>
@@ -77,7 +77,7 @@
             </article>
 
             <article class="welfare-menu-card">
-              <div class="welfare-menu-image"><img src="/images/welfare-document.png" alt="文書作成支援のイラスト" /></div>
+              <div class="welfare-menu-image"><img src="/images/welfare-document.webp" alt="文書作成支援のイラスト" /></div>
               <div class="welfare-menu-copy">
                 <span>Service 03</span>
                 <h3>記録・文書作成の補助</h3>
@@ -87,7 +87,7 @@
             </article>
 
             <article class="welfare-menu-card">
-              <div class="welfare-menu-image"><img src="/images/welfare-training.png" alt="作業設計と人材育成のイラスト" /></div>
+              <div class="welfare-menu-image"><img src="/images/welfare-training.webp" alt="作業設計と人材育成のイラスト" /></div>
               <div class="welfare-menu-copy">
                 <span>Service 04</span>
                 <h3>作業設計・定着支援</h3>
@@ -116,7 +116,7 @@
               </div>
             </div>
             <div class="welfare-merit-image">
-              <img src="/images/welfare-merit-01.png" alt="支援記録と文書作成を効率化するイメージ" />
+              <img src="/images/welfare-merit-01.webp" alt="支援記録と文書作成を効率化するイメージ" />
             </div>
           </article>
 
@@ -135,7 +135,7 @@
               </div>
             </div>
             <div class="welfare-merit-image">
-              <img src="/images/welfare-merit-02.png" alt="福祉現場で安全にAIを使うための運用設計イメージ" />
+              <img src="/images/welfare-merit-02.webp" alt="福祉現場で安全にAIを使うための運用設計イメージ" />
             </div>
           </article>
         </div>
@@ -146,7 +146,7 @@
           <p class="mt-3 text-ink">「うちの事業所でも使えるか知りたい」という段階から歓迎します。</p>
           <div class="mt-6 flex flex-wrap justify-center gap-3">
             <a href="/contact.html" class="btn-primary" data-cta="welfare_bottom_contact">無料相談する</a>
-            <a href="{{ lineUrl }}" class="btn-line" data-line target="_blank" rel="noopener">LINEで相談する</a>
+            {{#if hasLine}}<a href="{{ lineUrl }}" class="btn-line" data-line target="_blank" rel="noopener">LINEで相談する</a>{{/if}}
           </div>
         </div>
       </section>

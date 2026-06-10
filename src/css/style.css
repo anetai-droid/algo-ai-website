@@ -85,7 +85,7 @@
   .icon-badge { @apply flex h-12 w-12 items-center justify-center rounded-xl; color: var(--color-accent-deep); background: linear-gradient(135deg, var(--color-accent-soft), #fff); border: 1px solid var(--color-line); }
   .icon-badge svg { width: 1.5rem; height: 1.5rem; }
 
-  .stats-band { @apply relative overflow-hidden py-12 lg:py-14; background: url("../images/service-office-green.png") center/cover; }
+  .stats-band { @apply relative overflow-hidden py-12 lg:py-14; background: url("../images/service-office-green.webp") center/cover; }
   .stats-band::before { content: ""; position: absolute; inset: 0; background: rgba(18, 18, 18, 0.62); pointer-events: none; }
   .stats-band .container-base { @apply relative z-10; }
   .stat-num { @apply font-bold leading-none text-white; font-family: var(--font-mono); font-size: clamp(2.5rem, 5vw, 3.5rem); letter-spacing: -0.02em; text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45); }
@@ -98,7 +98,7 @@
   .prose-link:hover { color: var(--color-navy-dark); }
 
   .challenge-feature { @apply mx-auto mt-8 grid max-w-6xl items-center gap-8 lg:grid-cols-[1.2fr_0.9fr]; }
-  .challenge-image { @apply min-h-[330px]; background: url("../images/visual-data-illustration.png") center/contain no-repeat; }
+  .challenge-image { @apply min-h-[330px]; background: url("../images/visual-data-illustration.webp") center/contain no-repeat; }
   .challenge-list { @apply grid gap-2.5; }
   .challenge-list li { @apply flex items-start gap-3 rounded-lg border border-line bg-white px-5 py-3.5 text-left text-sm font-medium leading-relaxed text-ink shadow-sm; }
   .challenge-list li span { @apply mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent-soft text-accent-deep; }
@@ -115,7 +115,7 @@
   .hero { @apply relative overflow-hidden; background-color: var(--color-navy-dark); min-height: 680px; }
   .hero::before { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(105deg, rgba(255, 255, 255, 0.58) 0%, rgba(255, 255, 255, 0.52) 34%, rgba(255, 255, 255, 0.28) 46%, rgba(255, 255, 255, 0.06) 58%, rgba(255, 255, 255, 0) 100%); }
   .hero::after { content: ""; position: absolute; inset: auto 0 0 auto; z-index: 1; width: 42%; height: 36%; pointer-events: none; background: linear-gradient(135deg, transparent 0 46%, rgba(88, 86, 86, 0.88) 47% 100%); opacity: 0.9; }
-  .hero-media { position: absolute; inset: 0; z-index: 0; background-image: url("../images/hero-consulting-welfare.png"); background-size: cover; background-repeat: no-repeat; background-position: center; }
+  .hero-media { position: absolute; inset: 0; z-index: 0; background-image: url("../images/hero-consulting-welfare.webp"); background-size: cover; background-repeat: no-repeat; background-position: center; }
   /* オーバーレイ無し：写真は100%クリア */
   .hero-grid { position: absolute; inset: 0; z-index: 2; pointer-events: none; background-image: linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px); background-size: 52px 52px; -webkit-mask-image: radial-gradient(70% 80% at 82% 0%, #000, transparent 75%); mask-image: radial-gradient(70% 80% at 82% 0%, #000, transparent 75%); }
   .hero .hero-content { max-width: none; padding-left: clamp(1.5rem, 4vw, 4.5rem); }
@@ -131,7 +131,7 @@
   .hero-badge span { @apply text-xs font-bold text-accent-deep; }
   .hero-badge strong { @apply text-sm font-bold text-navy-dark; }
 
-  .page-hero { @apply relative flex items-center overflow-hidden py-16 lg:py-20; min-height: 430px; background: url("../images/page-hero-main.png") center/cover no-repeat; }
+  .page-hero { @apply relative flex items-center overflow-hidden py-16 lg:py-20; min-height: 430px; background: url("../images/page-hero-main.webp") center/cover no-repeat; }
   .page-hero::before,
   .page-hero::after { content: none; }
   .page-hero .section-eyebrow { color: #9bd4ff; text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35); }
@@ -143,16 +143,16 @@
   .welfare-page-hero .welfare-hero-copy h1 { color: #ffffff !important; }
   .welfare-page-hero .welfare-hero-copy .section-lead { max-width: 48rem; color: rgba(255, 255, 255, 0.92); }
 
-  .section-dark { @apply relative overflow-hidden text-white; background: linear-gradient(rgba(88, 86, 86, 0.82), rgba(88, 86, 86, 0.86)), url("../images/service-office-green.png") center/cover; }
+  .section-dark { @apply relative overflow-hidden text-white; background: linear-gradient(rgba(88, 86, 86, 0.82), rgba(88, 86, 86, 0.86)), url("../images/service-office-green.webp") center/cover; }
   .section-dark::before { content: ""; position: absolute; inset: 0; background-image: linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px); background-size: 52px 52px; -webkit-mask-image: radial-gradient(120% 90% at 75% 10%, #000 40%, transparent 80%); mask-image: radial-gradient(120% 90% at 75% 10%, #000 40%, transparent 80%); pointer-events: none; }
   .site-footer { @apply relative overflow-hidden text-white; background: #3f3f3f; }
-  .bottom-cta-band { @apply relative overflow-hidden text-white; background: linear-gradient(90deg, rgba(36, 185, 218, 0.80), rgba(32, 115, 190, 0.84)), url("../images/bottom-cta-bg.png") center/cover; }
+  .bottom-cta-band { @apply relative overflow-hidden text-white; background: linear-gradient(90deg, rgba(36, 185, 218, 0.80), rgba(32, 115, 190, 0.84)), url("../images/bottom-cta-bg.webp") center/cover; }
   .bottom-cta-band::before { content: "SERVICE"; position: absolute; top: 1.2rem; right: max(1.5rem, calc((100% - 72rem) / 2)); color: rgba(255, 255, 255, 0.18); font-family: var(--font-mono); font-size: clamp(3rem, 9vw, 7rem); font-weight: 700; letter-spacing: 0.08em; line-height: 1; pointer-events: none; }
   .bottom-cta-band::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0)); pointer-events: none; }
   .glass-card { @apply relative rounded-2xl border p-6; background: rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.12); transition: transform 0.22s ease, background-color 0.22s ease; }
   .glass-card:hover { transform: translateY(-4px); background: rgba(255, 255, 255, 0.09); }
 
-  .business-band { @apply relative overflow-hidden py-16 lg:py-20; background: linear-gradient(90deg, rgba(88, 86, 86, 0.96), rgba(88, 86, 86, 0.84)), url("../images/service-office.png") center/cover; }
+  .business-band { @apply relative overflow-hidden py-16 lg:py-20; background: linear-gradient(90deg, rgba(88, 86, 86, 0.96), rgba(88, 86, 86, 0.84)), url("../images/service-office.webp") center/cover; }
   .business-band::after { content: ""; position: absolute; inset: 0; background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px); background-size: 48px 48px; opacity: 0.5; pointer-events: none; }
   .business-band-inner { @apply relative z-10 grid items-center gap-10 lg:grid-cols-[0.82fr_1.18fr]; }
   .business-copy { @apply max-w-xl text-white; }
@@ -166,21 +166,21 @@
   .business-tile { @apply relative overflow-hidden bg-white shadow-lg ring-1 ring-white/20; border-radius: 2px; min-height: 104px; }
   .business-tile::before { content: ""; position: absolute; inset: 0; background: linear-gradient(145deg, rgba(255,255,255,0.18), transparent 55%); }
   .business-tile span { @apply absolute bottom-3 left-3 bg-white/92 px-2.5 py-1 text-[11px] font-bold text-navy-dark; border-radius: 2px; }
-  .tile-large { @apply col-span-3 row-span-2; background: linear-gradient(90deg, rgba(20,63,100,0.16), rgba(20,63,100,0.02)), url("../images/service-office.png") center/cover; }
-  .tile-code { @apply col-span-3; background: linear-gradient(90deg, rgba(16,43,69,0.26), rgba(16,43,69,0.02)), url("../images/service-system-server.png") center/cover; }
-  .tile-care { @apply col-span-2; background: linear-gradient(90deg, rgba(47,128,104,0.20), rgba(47,128,104,0.02)), url("../images/service-welfare-desk.png") center/cover; }
-  .tile-data { @apply col-span-1; background: linear-gradient(90deg, rgba(20,63,100,0.18), rgba(20,63,100,0.02)), url("../images/service-office-green.png") center/cover; }
+  .tile-large { @apply col-span-3 row-span-2; background: linear-gradient(90deg, rgba(20,63,100,0.16), rgba(20,63,100,0.02)), url("../images/service-office.webp") center/cover; }
+  .tile-code { @apply col-span-3; background: linear-gradient(90deg, rgba(16,43,69,0.26), rgba(16,43,69,0.02)), url("../images/service-system-server.webp") center/cover; }
+  .tile-care { @apply col-span-2; background: linear-gradient(90deg, rgba(47,128,104,0.20), rgba(47,128,104,0.02)), url("../images/service-welfare-desk.webp") center/cover; }
+  .tile-data { @apply col-span-1; background: linear-gradient(90deg, rgba(20,63,100,0.18), rgba(20,63,100,0.02)), url("../images/service-office-green.webp") center/cover; }
 
   .service-split { @apply bg-white py-16 lg:py-20; }
   .service-split-grid { @apply grid items-center gap-12 lg:grid-cols-2; }
   .service-mosaic { @apply grid grid-cols-3 gap-3; align-self: stretch; }
   .mosaic-card { @apply flex min-h-[112px] items-end p-3 text-xs font-bold text-white shadow-md ring-1 ring-black/5; border-radius: 2px; }
-  .mosaic-dark { @apply col-span-1; background: linear-gradient(90deg, rgba(21,58,92,0.32), rgba(21,58,92,0.06)), url("../images/visual-ai-chip.png") center/cover; }
-  .mosaic-light { @apply col-span-1 text-navy-dark; background: linear-gradient(145deg, rgba(255,255,255,0.74), rgba(220,236,248,0.58)), url("../images/visual-data-illustration.png") center/cover; border: 1px solid var(--color-line); }
-  .mosaic-blue { @apply col-span-1; background: linear-gradient(90deg, rgba(44,132,203,0.26), rgba(44,132,203,0.04)), url("../images/service-social-tools.png") center/cover; }
-  .mosaic-photo { @apply col-span-2 row-span-2; min-height: 244px; background: linear-gradient(90deg, rgba(17,47,76,0.22), rgba(17,47,76,0.02)), url("../images/case-teamwork.png") center/cover; }
-  .mosaic-green { @apply col-span-1; background: linear-gradient(90deg, rgba(47,128,104,0.24), rgba(47,128,104,0.04)), url("../images/visual-ai-touch.png") center/cover; }
-  .mosaic-line { @apply col-span-1 text-navy-dark; background: linear-gradient(145deg, rgba(237,246,252,0.78), rgba(255,255,255,0.56)), url("../images/visual-network.png") center/cover; border: 1px solid var(--color-line); }
+  .mosaic-dark { @apply col-span-1; background: linear-gradient(90deg, rgba(21,58,92,0.32), rgba(21,58,92,0.06)), url("../images/visual-ai-chip.webp") center/cover; }
+  .mosaic-light { @apply col-span-1 text-navy-dark; background: linear-gradient(145deg, rgba(255,255,255,0.74), rgba(220,236,248,0.58)), url("../images/visual-data-illustration.webp") center/cover; border: 1px solid var(--color-line); }
+  .mosaic-blue { @apply col-span-1; background: linear-gradient(90deg, rgba(44,132,203,0.26), rgba(44,132,203,0.04)), url("../images/service-social-tools.webp") center/cover; }
+  .mosaic-photo { @apply col-span-2 row-span-2; min-height: 244px; background: linear-gradient(90deg, rgba(17,47,76,0.22), rgba(17,47,76,0.02)), url("../images/case-teamwork.webp") center/cover; }
+  .mosaic-green { @apply col-span-1; background: linear-gradient(90deg, rgba(47,128,104,0.24), rgba(47,128,104,0.04)), url("../images/visual-ai-touch.webp") center/cover; }
+  .mosaic-line { @apply col-span-1 text-navy-dark; background: linear-gradient(145deg, rgba(237,246,252,0.78), rgba(255,255,255,0.56)), url("../images/visual-network.webp") center/cover; border: 1px solid var(--color-line); }
   .service-links { @apply mt-6 grid gap-2; }
   .service-links a { @apply block border-b border-line py-2.5 text-sm font-bold text-navy-dark transition-colors; }
   .service-links a:hover { color: var(--color-accent-deep); }
@@ -199,9 +199,9 @@
   .service-story-photo { position: absolute; width: 82%; height: 74%; background-size: cover; background-position: center; box-shadow: 0 16px 36px -22px rgba(15, 39, 68, 0.45); }
   .service-story:not(.service-story-reverse) .service-story-photo { left: 8%; top: 12%; }
   .service-story-reverse .service-story-photo { right: 8%; top: 8%; }
-  .service-story-photo-consulting { background-image: url("../images/case-teamwork.png"); }
-  .service-story-photo-compare { background-image: url("../images/service-office-green.png"); }
-  .service-story-photo-development { background-image: url("../images/service-development.png"); }
+  .service-story-photo-consulting { background-image: url("../images/case-teamwork.webp"); }
+  .service-story-photo-compare { background-image: url("../images/service-office-green.webp"); }
+  .service-story-photo-development { background-image: url("../images/service-development.webp"); }
   .service-story-copy { @apply relative z-10 max-w-xl; }
   .story-num { @apply mb-3 inline-flex rounded-full px-3 py-1 font-mono text-[11px] font-bold tracking-[0.08em] text-white; background: #28b8b2; }
   .service-story-copy h2 { @apply text-sm font-bold tracking-[0.18em] uppercase; color: #28b8b2; font-family: var(--font-mono); }
@@ -276,9 +276,9 @@
   .case-grid { @apply mt-10 grid gap-7 md:grid-cols-3; }
   .case-card { @apply bg-transparent; }
   .case-thumb { @apply mb-4 h-40 w-full shadow-sm ring-1 ring-black/5; border-radius: 2px; }
-  .case-thumb-blue { background: linear-gradient(90deg, rgba(31,99,166,0.20), rgba(31,99,166,0.02)), url("../images/service-development.png") center/cover; }
-  .case-thumb-green { background: linear-gradient(90deg, rgba(47,128,104,0.20), rgba(47,128,104,0.03)), url("../images/case-training.png") center/cover; }
-  .case-thumb-ink { background: linear-gradient(90deg, rgba(27,42,56,0.24), rgba(27,42,56,0.04)), url("../images/service-data-analysis.png") center/cover; }
+  .case-thumb-blue { background: linear-gradient(90deg, rgba(31,99,166,0.20), rgba(31,99,166,0.02)), url("../images/service-development.webp") center/cover; }
+  .case-thumb-green { background: linear-gradient(90deg, rgba(47,128,104,0.20), rgba(47,128,104,0.03)), url("../images/case-training.webp") center/cover; }
+  .case-thumb-ink { background: linear-gradient(90deg, rgba(27,42,56,0.24), rgba(27,42,56,0.04)), url("../images/service-data-analysis.webp") center/cover; }
   .case-tags { @apply mb-3 flex flex-wrap gap-2; }
   .case-tags span { @apply inline-flex px-2 py-1 text-[11px] font-bold text-white; background: var(--color-accent); border-radius: 2px; }
   .case-tags span:nth-child(2) { background: #79b88f; }
@@ -408,13 +408,50 @@
   .company-track-card span { @apply font-mono text-[11px] font-bold uppercase tracking-[0.12em] text-accent-deep; }
   .company-track-card h3 { @apply mt-2 text-xl font-bold text-navy-dark; }
   .company-track-card p { @apply mt-3 text-sm leading-relaxed text-ink-soft; }
-  .company-track-card.accent { @apply flex min-h-[296px] items-end text-white; background: linear-gradient(135deg, rgba(31, 99, 166, 0.96), rgba(53, 154, 210, 0.92)), url("../images/company-profile-light.png") center/cover; }
+  .company-track-card.accent { @apply flex min-h-[296px] items-end text-white; background: linear-gradient(135deg, rgba(31, 99, 166, 0.96), rgba(53, 154, 210, 0.92)), url("../images/company-profile-light.webp") center/cover; }
   .company-track-card.accent span,
   .company-track-card.accent h3 { color: #ffffff; }
   .company-track-card.accent p { color: rgba(255, 255, 255, 0.84); }
 
   .field { @apply mt-2 w-full rounded-lg border bg-white px-4 py-3 text-base transition-colors; border-color: var(--color-line); }
   .field:focus { border-color: var(--color-accent); outline: none; box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-accent) 18%, transparent); }
+
+  /* ===== 開発実績・プロジェクト例（works） ===== */
+  .works-grid { @apply mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3; }
+  .work-card { @apply relative flex flex-col rounded-2xl border bg-white p-6; border-color: var(--color-line); box-shadow: var(--shadow-card); transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease; }
+  .work-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lift); border-color: color-mix(in srgb, var(--color-accent) 35%, var(--color-line)); }
+  .work-card .work-cat { @apply font-mono text-[11px] font-bold uppercase tracking-[0.12em] text-accent-deep; }
+  .work-card h3 { @apply mt-2 text-lg font-bold leading-snug text-navy-dark; }
+  .work-card .work-tech { @apply mt-2 inline-flex w-fit rounded-full bg-accent-soft px-3 py-1 text-[12px] font-bold text-accent-deep; }
+  .work-card p { @apply mt-3 text-sm leading-relaxed text-ink-soft; }
+
+  /* ===== コラム一覧（column） ===== */
+  .col-grid { @apply mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3; }
+  .col-card { @apply flex flex-col rounded-2xl border bg-white p-6 transition-colors; border-color: var(--color-line); box-shadow: var(--shadow-card); }
+  .col-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lift); }
+  .col-card .col-tag { @apply inline-flex w-fit rounded-full px-3 py-1 text-[11px] font-bold text-white; background: var(--color-accent-deep); }
+  .col-card h3 { @apply mt-3 text-base font-bold leading-snug text-navy-dark; }
+  .col-card p { @apply mt-2 flex-1 text-sm leading-relaxed text-ink-soft; }
+  .col-card .col-more { @apply mt-4 text-sm font-bold text-accent-deep; }
+
+  /* ===== コラム記事本文（article-prose） ===== */
+  .article-prose { @apply mx-auto max-w-3xl; }
+  .article-prose > p { @apply mt-5 leading-relaxed text-ink; }
+  .article-prose h2 { @apply mt-12 border-l-4 pl-4 text-xl font-bold text-navy-dark sm:text-2xl; border-color: var(--color-accent); }
+  .article-prose h3 { @apply mt-8 text-lg font-bold text-navy-dark; }
+  .article-prose ul { @apply mt-4 grid gap-2; }
+  .article-prose ul li { @apply flex items-start gap-2 text-ink; }
+  .article-prose ul li::before { content: ""; margin-top: 0.65em; width: 0.45rem; height: 0.45rem; flex: 0 0 auto; border-radius: 999px; background: var(--color-accent); }
+  .article-note { @apply mt-6 rounded-xl border-l-4 bg-offwhite p-5 text-sm leading-relaxed text-ink-soft; border-color: #e0a83a; }
+  .article-meta { @apply flex flex-wrap items-center gap-3 text-sm text-ink-soft; }
+  .article-meta .col-tag { @apply inline-flex rounded-full px-3 py-1 text-[11px] font-bold text-white; background: var(--color-accent-deep); }
+
+  /* ===== 就労支援との協働（co-creation） ===== */
+  .cocreation-flow { @apply mt-10 grid gap-5 md:grid-cols-3; }
+  .cocreation-step { @apply relative rounded-2xl border bg-white p-6; border-color: var(--color-line); box-shadow: var(--shadow-card); }
+  .cocreation-step .step-num { @apply flex h-11 w-11 items-center justify-center rounded-xl font-mono text-lg font-bold text-white; background: linear-gradient(135deg, var(--color-accent-bright), var(--color-accent-deep)); }
+  .cocreation-step h3 { @apply mt-4 font-bold text-navy-dark; }
+  .cocreation-step p { @apply mt-2 text-sm leading-relaxed text-ink-soft; }
 }
 
 @layer utilities {

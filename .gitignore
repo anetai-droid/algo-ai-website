@@ -17,3 +17,8 @@ Thumbs.db
 *.log
 .vscode/
 .idea/
+
+# 検証・作業用の一時生成物（コミット対象外）
+_shots/
+_pdftmp/
+_req_algo.txt
