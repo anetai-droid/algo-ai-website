@@ -128,10 +128,16 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
   const siteUrl = (env.SITE_URL || SITE.defaultUrl).replace(/\/$/, '')
   const gaId = env.VITE_GA4_ID || ''
+  const hotjarId = env.VITE_HOTJAR_ID || ''
   const lineUrl = env.VITE_LINE_URL || '#'
   // LINE公式アカウントURLが未設定なら、関連UI（導線・文言・連絡方法の選択肢）を
   // ビルド時に出力しない。URLが入れば全て自動的に有効化される。
   const hasLine = Boolean(env.VITE_LINE_URL && env.VITE_LINE_URL !== '#')
+  // 予約URL（Calendly等）・電話番号も、値が設定されたときだけ表示・動作する受け口。
+  const bookingUrl = env.VITE_BOOKING_URL || ''
+  const hasBooking = Boolean(bookingUrl)
+  const tel = env.VITE_TEL || ''
+  const hasTel = Boolean(tel)
   const contactEndpoint = env.VITE_CONTACT_ENDPOINT || '/api/contact.php'
 
   return {
@@ -145,8 +151,13 @@ export default defineConfig(({ mode }) => {
             site: SITE,
             siteUrl,
             gaId,
+            hotjarId,
             lineUrl,
             hasLine,
+            bookingUrl,
+            hasBooking,
+            tel,
+            hasTel,
             contactEndpoint,
             page: {
               title: meta.title || `${SITE.name}`,

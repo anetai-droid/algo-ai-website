@@ -33,7 +33,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
-  href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@600;700&family=Roboto+Mono:wght@500&display=swap"
+  href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@600;700&family=Roboto+Mono:wght@500&display=swap"
   rel="stylesheet"
 />
 
@@ -54,13 +54,27 @@
 </script>
 
 {{#if gaId}}
-<!-- Google Analytics 4 -->
+<!-- Google Analytics 4（VITE_GA4_ID 設定時のみ出力） -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ gaId }}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', '{{ gaId }}');
+</script>
+{{/if}}
+
+{{#if hotjarId}}
+<!-- Hotjar（VITE_HOTJAR_ID 設定時のみ出力） -->
+<script>
+  (function(h,o,t,j,a,r){
+    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+    h._hjSettings={hjid:{{ hotjarId }},hjsv:6};
+    a=o.getElementsByTagName('head')[0];
+    r=o.createElement('script');r.async=1;
+    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
 {{/if}}
 

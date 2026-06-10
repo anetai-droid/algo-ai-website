@@ -4,7 +4,7 @@
   data-floating-cta
 >
   <div class="container-base flex gap-3">
-    <a href="/contact.html" class="btn-primary flex-1 px-3 py-3 text-sm" data-cta="floating_contact">無料相談する</a>
+    {{#if hasBooking}}<a href="{{ bookingUrl }}" class="btn-primary flex-1 px-3 py-3 text-sm" data-cta="floating_booking" target="_blank" rel="noopener">無料相談を予約</a>{{else}}<a href="/contact.html" class="btn-primary flex-1 px-3 py-3 text-sm" data-cta="floating_contact">無料相談する</a>{{/if}}
     {{#if hasLine}}<a href="{{ lineUrl }}" class="btn-line flex-1 px-3 py-3 text-sm" data-line target="_blank" rel="noopener">LINE相談</a>{{/if}}
   </div>
 </div>
@@ -29,6 +29,7 @@
         <a href="/contact.html" class="btn-accent px-5 py-2.5 text-sm" data-cta="footer_contact">無料相談する</a>
         {{#if hasLine}}<a href="{{ lineUrl }}" class="btn-line px-5 py-2.5 text-sm" data-line target="_blank" rel="noopener">LINEで相談する</a>{{/if}}
       </div>
+      {{#if hasTel}}<p class="mt-4 text-sm text-white/70">お電話：<a href="tel:{{ tel }}" class="font-bold text-white transition-colors hover:text-accent-bright">{{ tel }}</a></p>{{/if}}
     </div>
 
     <!-- サービス -->

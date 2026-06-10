@@ -20,7 +20,7 @@
     }
     </script>
   </head>
-  <body>
+  <body class="themed-page works-page">
     {{> header }}
 
     <main id="main">
@@ -36,16 +36,7 @@
         </div>
       </section>
 
-      <!-- 実績数値（一次資料記載） -->
-      <section class="stats-band">
-        <div class="container-base grid gap-8 text-center sm:grid-cols-3">
-          <div data-reveal><p class="stat-num">36<span class="text-2xl align-top">年</span></p><p class="stat-label">AI開発・研究開発歴<br />第二次AIブームから</p></div>
-          <div data-reveal data-reveal-delay="1"><p class="stat-num">30<span class="text-2xl align-top">社+</span></p><p class="stat-label">大手〜中小<br />開発実績</p></div>
-          <div data-reveal data-reveal-delay="2"><p class="stat-num">12<span class="text-2xl align-top">年+</span></p><p class="stat-label">数学・統計<br />教員歴</p></div>
-        </div>
-      </section>
-
-      <section class="section">
+      <section class="section works-showcase-section">
         <div class="container-base">
           <div class="mx-auto max-w-3xl text-center" data-reveal>
             <p class="section-eyebrow section-eyebrow-center">Project Examples</p>
@@ -53,7 +44,18 @@
             <p class="section-lead">需要予測から学習アプリ、AI経理、セキュリティ診断、Web制作まで。新規のご相談・受託開発を承っています。</p>
             <p class="mt-4 text-sm text-ink-soft">※ 守秘のため、顧客名・具体的な成果数値は記載していません。確認可能な範囲での開発実績・プロジェクト例として掲載しています。</p>
           </div>
+        </div>
 
+        <!-- 実績数値（一次資料記載） -->
+        <div class="stats-band mt-10">
+          <div class="container-base grid gap-8 text-center sm:grid-cols-3">
+            <div data-reveal><p class="stat-num">36<span class="text-2xl align-top">年</span></p><p class="stat-label">AI開発・研究開発歴<br />第二次AIブームから</p></div>
+            <div data-reveal data-reveal-delay="1"><p class="stat-num">30<span class="text-2xl align-top">社+</span></p><p class="stat-label">大手〜中小<br />開発実績</p></div>
+            <div data-reveal data-reveal-delay="2"><p class="stat-num">12<span class="text-2xl align-top">年+</span></p><p class="stat-label">数学・統計<br />教員歴</p></div>
+          </div>
+        </div>
+
+        <div class="container-base">
           <div class="works-grid" data-reveal>
             <article class="work-card">
               <span class="work-cat">Statistics ∕ ベイズ予測</span>
