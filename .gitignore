@@ -1,24 +1,27 @@
-# 依存・ビルド成果物
+﻿# Dependencies
 node_modules/
-dist/
+
+# Build output
+/dist/
 .vite/
 
-# 秘密情報（GitHub公開リポジトリには絶対に上げない）
+# Local environment / secrets
 .env
 .env.local
 .env.*.local
-
-# PHPフォームのローカル設定（送信先メール等の実値）
 public/api/config.php
 
-# OS / エディタ
-.DS_Store
-Thumbs.db
-*.log
-.vscode/
-.idea/
-
-# 検証・作業用の一時生成物（コミット対象外）
+# Local work files
+.claude/
 _shots/
+画像素材/
+_archive/local-work-*/
 _pdftmp/
 _req_algo.txt
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
